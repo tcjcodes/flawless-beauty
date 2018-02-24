@@ -8,8 +8,10 @@ import './all.sass';
 const TemplateWrapper = ({ data, children }) => (
   <div>
     <Helmet title={data.site.siteMetadata.title} />
-    <Navbar />
-    <div>{children()}</div>
+    <div className='container grid-lg'>
+      <Navbar />
+      <div>{children()}</div>
+    </div>
   </div>
 );
 
