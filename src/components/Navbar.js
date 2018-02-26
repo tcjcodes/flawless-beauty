@@ -1,5 +1,7 @@
+import { css } from 'emotion';
 import Link from 'gatsby-link';
 import React from 'react';
+import logo from '../img/logo.png';
 import './_navbar.scss';
 
 const Navbar = () => (
@@ -8,10 +10,9 @@ const Navbar = () => (
       <div className='flex-cols navbar-flex'>
         <div className='logo-wrapper'>
           <Link to='/'>
-            {/*<figure className='image'>*/}
-              {/*<img src={logo} alt='Flawless Beauty' className={css`width: 300;`} />*/}
-            {/*</figure>*/}
-            <h1 className='fb-script'>Flawless Beauty</h1>
+            <figure className='image'>
+              <img src={logo} alt='Flawless Beauty' className={css`width: 400px;`}/>
+            </figure>
           </Link>
         </div>
 

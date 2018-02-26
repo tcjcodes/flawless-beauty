@@ -2,58 +2,33 @@
 
 .fb-index-page {
   .flex-container {
-    //display: flex;
-    //flex-flow: row wrap;
-
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
-
-    //line-height:30px;
   }
   .flex-cell {
     flex: 0 0 20%;
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 0.5rem;
     box-sizing: border-box;
   }
-
   .flex-cell:before {
     content: '';
     display: table;
     padding-top: 100%;
   }
-
   .flex-item {
     flex-grow: 1;
-    //border: 1px solid black;
-    //background: tomato;
-    //color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .landing-box {
-    border: 1px solid $dark-gray;
-    //height: 200px;
-    //width: 200px;
-
-    //display: flex;
-    //align-items: center;
-    //justify-content: center;
-
-    //font-size: 1.5em;
-    //font-weight: 700;
-
     text-transform: uppercase;
     letter-spacing: 3px;
-
     &.box-gray {
-      background: $dark-gray;
       color: $white;
     }
     &.box-pink {

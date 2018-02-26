@@ -6,7 +6,11 @@
 
   .fb-tw-container {
     min-height: 100vh;
-    border: 1px solid gray;
+  }
+
+  .fb-footer {
+    margin: 2em 0 2.5em 0;
+    color: $dark-gray;
   }
 }
 
