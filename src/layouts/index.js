@@ -1,31 +1,20 @@
-import { css } from 'emotion';
+import { ThemeProvider } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styled from 'react-emotion';
-import { ThemeProvider } from 'emotion-theming';
 import Helmet from 'react-helmet';
-import theme from '../utils/theme';
 import Navbar from '../components/Navbar';
-import './all.sass';
-
-const twContainer = css`
-  border: 1px solid gray;
-`;
-
-const Wrapper = styled('div')`
-  background: ${({ theme }) => theme.white};
-  height: 100vh;
-`;
+import theme from '../utils/theme';
+import './_index.scss';
 
 const TemplateWrapper = ({ data, children }) => (
   <ThemeProvider theme={theme}>
-    <Wrapper>
+    <div className='fb-template-wrapper'>
       <Helmet title={data.site.siteMetadata.title} />
-      <div className={`container grid-lg ${twContainer}`}>
+      <div className='fb-tw-container container grid-lg'>
         <Navbar />
         <div>{children()}</div>
       </div>
-    </Wrapper>
+    </div>
   </ThemeProvider>
 );
 

@@ -1,29 +1,17 @@
-import { css, cx } from 'emotion';
 import Link from 'gatsby-link';
 import React from 'react';
-// import logo from '../img/logo_lg.png';
-import { flexCols, scriptFont } from '../utils/commonStyles';
-
-const navbarFlex = css`
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-`;
-
-const logoWrapper = css`
-  margin-top: 3em;
-`
+import './_navbar.scss';
 
 const Navbar = () => (
-  <header className='navbar'>
+  <header className='fb-navbar navbar'>
     <section className='navbar-section'>
-      <div className={cx(flexCols, navbarFlex)}>
-        <div className={logoWrapper}>
+      <div className='flex-cols navbar-flex'>
+        <div className='logo-wrapper'>
           <Link to='/'>
             {/*<figure className='image'>*/}
               {/*<img src={logo} alt='Flawless Beauty' className={css`width: 300;`} />*/}
             {/*</figure>*/}
-            <h1 className={scriptFont}>Flawless Beauty</h1>
+            <h1 className='fb-script'>Flawless Beauty</h1>
           </Link>
         </div>
 
