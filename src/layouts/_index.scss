@@ -1,11 +1,11 @@
-@import './variables';
-@import './common-styles';
+@import '../utils/variables';
+@import '../utils/common-styles';
 
 .fb-template-wrapper {
   background: $white;
-  height: 100vh;
 
   .fb-tw-container {
+    min-height: 100vh;
     border: 1px solid gray;
   }
 }
