@@ -1,9 +1,9 @@
 import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
-import { cx, css } from 'emotion';
-import cImg from '../img/aboutc.jpg';
-import eImg from '../img/aboute.jpeg';
+import { cx } from 'emotion';
+import cImg from '../img/flowerbrushes.jpeg';
+import eImg from '../img/flowerbrushes.jpeg';
 import './_about.scss';
 import styled from 'react-emotion';
 
