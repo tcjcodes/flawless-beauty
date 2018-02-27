@@ -34,7 +34,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --arrow-parens=always --write src/**/*.js",
+    "format": "prettier --trailing-comma es5 --single-quote --arrow-parens=always --write src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

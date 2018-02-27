@@ -9,4 +9,5 @@ static/admin/*.bundle.*
 yarn-error.log
 
 /.idea/
+/.idea/workspace.xml
 !/.idea/codeStyles/codeStyleConfig.xml
