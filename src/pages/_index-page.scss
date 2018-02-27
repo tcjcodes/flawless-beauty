@@ -18,6 +18,13 @@
     align-items: stretch;
     box-sizing: border-box;
 
+    letter-spacing: 4px;
+    transition: letter-spacing 0.2s;
+
+    &:hover {
+      letter-spacing: 7px;
+      cursor: pointer;
+    }
   }
   .flex-cell:before {
     content: '';

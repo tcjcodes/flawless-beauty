@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 export default ({ testimonials }) => (
   <div>
-    {testimonials.map(testimonial => (
+    {testimonials.map((testimonial) => (
       <article className="message">
         <div className="message-body">
           {testimonial.quote}
@@ -12,4 +12,4 @@ export default ({ testimonials }) => (
       </article>
     ))}
   </div>
-);
+)

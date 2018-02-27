@@ -1,0 +1,11 @@
+@import './variables';
+@import '~spectre.css/src/spectre';
+
+$border-radius: $unit-1;
+
+.form-input {
+  &:focus {
+    @include control-shadow($dark-gray);
+    border-color: $dark-gray;
+  }
+}

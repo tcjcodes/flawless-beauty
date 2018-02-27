@@ -1,19 +1,19 @@
-import { css, cx } from 'emotion';
-import styled from 'react-emotion';
-import React from 'react';
-import Script from 'react-load-script';
-import goldBg from '../img/goldgradient.jpeg';
-import bg0 from '../img/eyeshadow.jpeg';
-import bg3 from '../img/eyesense.jpeg';
-import bg1 from '../img/redlips2.jpeg';
-import bg2 from '../img/katemaxlips.jpg';
-import './_index-page.scss';
+import { css, cx } from 'emotion'
+import styled from 'react-emotion'
+import React from 'react'
+import Script from 'react-load-script'
+import goldBg from '../img/goldgradient.jpeg'
+import bg0 from '../img/eyeshadow.jpeg'
+import bg3 from '../img/eyesense.jpeg'
+import bg1 from '../img/redlips2.jpeg'
+import bg2 from '../img/katemaxlips.jpg'
+import './_index-page.scss'
 
-import './index';
+import './index'
 
 const GridRow = ({ children }) => (
   <div className="flex-container">{children}</div>
-);
+)
 
 const GoldText = styled('div')`
   position: relative;
@@ -22,30 +22,25 @@ const GoldText = styled('div')`
   background: linear-gradient(transparent, transparent),
     url(${goldBg}) center repeat;
   -webkit-background-clip: text;
-      letter-spacing: 4px;
-  transition: letter-spacing 0.2s;
-  
-  &:hover {
-    letter-spacing: 7px;
-    cursor: pointer;
-  }
-`;
+`
 
 const GridItem = ({ className, children, color, bg }) => (
   <div
     className={cx(
       `flex-cell text-center landing-box m-2 box-${color}`,
-        css`
-          background-color: lightgray;
-          background: url(${bg}) center no-repeat;
-          background-size: cover;
-        `,
-      className,
+      css`
+        background-color: lightgray;
+        background: url(${bg}) center no-repeat;
+        background-size: cover;
+      `,
+      className
     )}
   >
-    <div className={cx(`flex-item flex-${color}`)}><GoldText>{children}</GoldText></div>
+    <div className={cx(`flex-item flex-${color}`)}>
+      <GoldText>{children}</GoldText>
+    </div>
   </div>
-);
+)
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -53,12 +48,12 @@ export default class IndexPage extends React.Component {
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
           window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
-          });
+            document.location.href = '/admin/'
+          })
         }
-      });
+      })
     }
-    window.netlifyIdentity.init();
+    window.netlifyIdentity.init()
   }
 
   render() {
@@ -77,7 +72,7 @@ export default class IndexPage extends React.Component {
               `}
               color="pink"
             >
-              Shop<br/>All
+              Shop<br />All
             </GridItem>
             <GridItem color="gray" bg={bg1} />
             <GridItem
@@ -86,7 +81,7 @@ export default class IndexPage extends React.Component {
               `}
               color="pink"
             >
-              What <br/> is it?
+              What<br />is it?
             </GridItem>
           </GridRow>
           <GridRow>
@@ -103,12 +98,14 @@ export default class IndexPage extends React.Component {
               className={css`
                 font-size: 2.25em;
               `}
-              color="pink">EYES
+              color="pink"
+            >
+              EYES
             </GridItem>
             <GridItem color="gray" bg={bg3} />
           </GridRow>
         </div>
       </section>
-    );
+    )
   }
 }

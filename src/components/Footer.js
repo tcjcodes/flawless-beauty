@@ -1,7 +1,7 @@
-import React from 'react';
-import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import './_footer.scss';
+import React from 'react'
+import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import './_footer.scss'
 
 export const Footer = () => (
   <footer className="fb-footer">
@@ -9,8 +9,11 @@ export const Footer = () => (
       <form action="" className="form-horizontal">
         <div className="columns">
           <div className="column col-5 col-ml-auto">
-            <h3 className=''>Contact Us</h3>
-            <p>For questions or general inquiries, feel free to send us a message.</p>
+            <h3 className="">Contact Us</h3>
+            <p>
+              For questions or general inquiries, feel free to send us a
+              message.
+            </p>
 
             <p>Follow us on social media!</p>
             <div className="d-flex text-center">
@@ -65,4 +68,4 @@ export const Footer = () => (
       </form>
     </div>
   </footer>
-);
+)
