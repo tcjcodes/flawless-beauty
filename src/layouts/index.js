@@ -15,17 +15,17 @@ const TemplateWrapper = ({ data, children }) => (
       <div className="fb-tw-container container grid-lg">
         <Navbar />
         <div>{children()}</div>
+        <footer className="fb-footer">
+          <div className="d-flex text-center centered">
+            <a className='social-icon text-light mx-1' href="#" target="_blank">
+              <FontAwesomeIcon size='2x' icon={faFacebookSquare} />
+            </a>
+            <a className='social-icon text-light mx-1' href="#" target="_blank">
+              <FontAwesomeIcon size='2x' icon={faInstagram} />
+            </a>
+          </div>
+        </footer>
       </div>
-      <footer className="fb-footer">
-        <div className="d-flex text-center centered">
-          <a className='text-light mx-1' href="#" target="_blank">
-            <FontAwesomeIcon size='2x' icon={faFacebookSquare} />
-          </a>
-          <a className='text-light mx-1' href="#" target="_blank">
-            <FontAwesomeIcon size='2x' icon={faInstagram} />
-          </a>
-        </div>
-      </footer>
     </div>
   </ThemeProvider>
 );

@@ -1,35 +1,49 @@
 import { css, cx } from 'emotion';
+import styled from 'react-emotion';
 import React from 'react';
 import Script from 'react-load-script';
-import bg0 from '../img/glossjarsm.jpeg';
-import bg1 from '../img/brushes.jpeg';
-import bg2 from '../img/bride.jpeg';
-import bg3 from '../img/katemaxlips.jpg';
+import goldBg from '../img/goldgradient.jpeg';
+import bg1 from '../img/eyes.jpeg';
+import bg3 from '../img/eyesense.jpeg';
+import bg0 from '../img/lips.jpeg';
+import bg2 from '../img/katemaxlips.jpg';
 import './_index-page.scss';
 
 import './index';
 
-const GridRow = ({ children }) => (<div className='flex-container'>{children}</div>);
+const GridRow = ({ children }) => (
+  <div className="flex-container">{children}</div>
+);
+
+const GoldText = styled('div')`
+  position: relative;
+  color: #c3a343;
+  text-fill-color: transparent;
+  background: linear-gradient(transparent, transparent),
+    url(${goldBg}) center repeat;
+  -webkit-background-clip: text;
+`;
 
 const GridItem = ({ className, children, color, bg }) => (
-    <div className={cx(
-      `flex-cell landing-box box-${color}`,
-      { [css`
-      background: url(${bg}) center no-repeat;
-      background-size: cover;
-    `]: !!bg },
-      className
-    )}>
-      <div className={cx(`flex-item`)}>
-        {children}
-      </div>
-    </div>
+  <div
+    className={cx(
+      `flex-cell landing-box m-2 box-${color}`,
+        css`
+          background-color: lightgray;
+          background: url(${bg}) center no-repeat;
+          background-size: cover;
+        `,
+      className,
+    )}
+  >
+    <div className={cx(`flex-item flex-${color}`)}><GoldText>{children}</GoldText></div>
+  </div>
 );
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', user => {
+      window.netlifyIdentity.on('init', (user) => {
         if (!user) {
           window.netlifyIdentity.on('login', () => {
             document.location.href = '/admin/';
@@ -42,25 +56,49 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <section className='fb-index-page section'>
+      <section className="fb-index-page section">
         <Script
-          url='https://identity.netlify.com/v1/netlify-identity-widget.js'
+          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className='container text-center'>
+        <div className="container text-center">
           <GridRow>
-            <GridItem color='gray' bg={bg0} />
-            <GridItem className={css`font-size: 1.75em;`} color='pink'>Shop</GridItem>
-            <GridItem color='gray' bg={bg1} />
-            <GridItem className={css`font-size: 1.25em;`} color='pink'>What is it?</GridItem>
-
+            <GridItem color="gray" bg={bg0} />
+            <GridItem
+              className={css`
+                font-size: 1.75em;
+              `}
+              color="pink"
+            >
+              Shop
+            </GridItem>
+            <GridItem color="gray" bg={bg1} />
+            <GridItem
+              className={css`
+                font-size: 1.25em;
+              `}
+              color="pink"
+            >
+              What is it?
+            </GridItem>
           </GridRow>
           <GridRow>
-            <GridItem className={css`font-size: 1.5em;`} color='pink'>LipSense</GridItem>
-            <GridItem color='gray' bg={bg2} />
-            <GridItem color='pink'>ShadowSense</GridItem>
-            <GridItem color='gray' bg={bg3} />
-
+            <GridItem
+              className={css`
+                font-size: 1.5em;
+              `}
+              color="pink"
+            >
+              LipSense
+            </GridItem>
+            <GridItem color="gray" bg={bg2} />
+            <GridItem
+              className={css`
+                font-size: 1.5em;
+              `}
+              color="pink">Shadow Sense
+            </GridItem>
+            <GridItem color="gray" bg={bg3} />
           </GridRow>
         </div>
       </section>

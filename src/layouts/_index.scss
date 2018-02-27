@@ -2,15 +2,22 @@
 @import '../utils/common-styles';
 
 .fb-template-wrapper {
-  background: $white;
+  background: url(../img/goldpattern.jpg) center repeat;
+  height: 100%;
 
   .fb-tw-container {
-    min-height: 100vh;
+    height: 100vh;
+    background: $white;
   }
 
   .fb-footer {
-    margin: 2em 0 2.5em 0;
+    margin: 1.5em 0 2.5em 0;
     color: $dark-gray;
+
+    .social-icon {
+      margin: 0 0.5em;
+
+    }
   }
 }
 

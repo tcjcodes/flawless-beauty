@@ -4,6 +4,7 @@
   .flex-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
   .flex-cell {
@@ -23,17 +24,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    margin: 0.5em;
+    border: 1px solid $light-pink;
 
+  }
+  .flex-pink {
+    border: 0px solid #E1B656;
+  }
   .landing-box {
     text-transform: uppercase;
     letter-spacing: 3px;
+
     &.box-gray {
       color: $white;
     }
     &.box-pink {
-      background: $light-pink;
-      color: $dark-gray;
+      border: 1px solid #E1B656;
+      //color: $dark-gray;
     }
   }
 }
