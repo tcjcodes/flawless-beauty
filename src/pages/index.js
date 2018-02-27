@@ -24,19 +24,20 @@ const GoldText = styled('div')`
   -webkit-background-clip: text;
 `;
 
-const GridItem = ({ className, children, color, bg }) => (
+const GridItem = ({ fontSize, className, children, bg }) => (
   <div
     className={cx(
-      `flex-cell text-center landing-box m-2 box-${color}`,
+      `text-center flex-cell m-2`,
       css`
         background-color: lightgray;
         background: url(${bg}) center no-repeat;
         background-size: cover;
+        font-size: ${fontSize}
       `,
-      className
+      { 'text-box': !bg },
     )}
   >
-    <div className={cx(`flex-item flex-${color}`)}>
+    <div className="flex-item">
       <GoldText>{children}</GoldText>
     </div>
   </div>
@@ -65,44 +66,24 @@ export default class IndexPage extends React.Component {
         />
         <div className="container grid-xl">
           <GridRow>
-            <GridItem color="gray" bg={bg0} />
-            <GridItem
-              className={css`
-                font-size: 2em;
-              `}
-              color="pink"
-            >
+            <GridItem bg={bg0} />
+            <GridItem fontSize='2em'>
               Shop<br />All
             </GridItem>
-            <GridItem color="gray" bg={bg1} />
-            <GridItem
-              className={css`
-                font-size: 1.75em;
-              `}
-              color="pink"
-            >
+            <GridItem bg={bg1} />
+            <GridItem fontSize='1.75em'>
               What<br />is it?
             </GridItem>
           </GridRow>
           <GridRow>
-            <GridItem
-              className={css`
-                font-size: 2.25em;
-              `}
-              color="pink"
-            >
+            <GridItem fontSize='2.25em'>
               LIPS
             </GridItem>
-            <GridItem color="gray" bg={bg2} />
-            <GridItem
-              className={css`
-                font-size: 2.25em;
-              `}
-              color="pink"
-            >
+            <GridItem bg={bg2} />
+            <GridItem fontSize='2.25em'>
               EYES
             </GridItem>
-            <GridItem color="gray" bg={bg3} />
+            <GridItem bg={bg3} />
           </GridRow>
         </div>
       </section>

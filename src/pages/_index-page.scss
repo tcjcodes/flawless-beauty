@@ -2,7 +2,6 @@
 
 .fb-index-page {
   background: url(../img/diamondshape600.jpg) center repeat;
-
   padding: 1.5em 0;
 
   .flex-container {
@@ -10,26 +9,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .flex-cell {
-    flex: 0 0 20%;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    box-sizing: border-box;
-
-    letter-spacing: 4px;
-    transition: letter-spacing 0.2s;
-
-    &:hover {
-      letter-spacing: 7px;
-      cursor: pointer;
-    }
-  }
-  .flex-cell:before {
-    content: '';
-    display: table;
-    padding-top: 100%;
   }
   .flex-item {
     flex-grow: 1;
@@ -39,15 +18,26 @@
     margin: 0.5em;
     border: 1px solid $light-color;
   }
-  .flex-pink {
-  }
-  .landing-box {
+  .flex-cell {
     text-transform: uppercase;
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+    transition: letter-spacing 0.2s;
 
-    &.box-gray {
-      color: $white;
+    &:before {
+      content: '';
+      display: table;
+      padding-top: 100%;
     }
-    &.box-pink {
+    &:hover {
+      letter-spacing: 7px;
+      cursor: pointer;
+    }
+    &.text-box {
       background: $white;
       border: 2px solid $gold;
     }
