@@ -61,12 +61,12 @@ export default class IndexPage extends React.Component {
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container text-center">
+        <div className="container grid-xl">
           <GridRow>
             <GridItem color="gray" bg={bg0} />
             <GridItem
               className={css`
-                font-size: 1.75em;
+                font-size: 2em;
               `}
               color="pink"
             >
@@ -75,7 +75,7 @@ export default class IndexPage extends React.Component {
             <GridItem color="gray" bg={bg1} />
             <GridItem
               className={css`
-                font-size: 1.25em;
+                font-size: 1.5em;
               `}
               color="pink"
             >
@@ -85,7 +85,7 @@ export default class IndexPage extends React.Component {
           <GridRow>
             <GridItem
               className={css`
-                font-size: 1.5em;
+                font-size: 1.75em;
               `}
               color="pink"
             >
@@ -94,9 +94,9 @@ export default class IndexPage extends React.Component {
             <GridItem color="gray" bg={bg2} />
             <GridItem
               className={css`
-                font-size: 1.5em;
+                font-size: 1.25em;
               `}
-              color="pink">Shadow Sense
+              color="pink">ShadowSense
             </GridItem>
             <GridItem color="gray" bg={bg3} />
           </GridRow>

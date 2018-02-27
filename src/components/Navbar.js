@@ -5,7 +5,7 @@ import logo from '../img/logo.png';
 import './_navbar.scss';
 
 const Navbar = () => (
-  <header className="fb-navbar navbar">
+  <header className="fb-navbar navbar container grid-lg">
     <section className="navbar-section">
       <Link className='navbar-brand' to="/">
         <figure className="image">
@@ -13,22 +13,24 @@ const Navbar = () => (
             src={logo}
             alt="Flawless Beauty"
             className={css`
-              width: 400px;
+              width: 250px;
             `}
           />
         </figure>
       </Link>
-      <Link className="btn btn-link" to="/products">
-        Products
-      </Link>
-      <a className="btn btn-link" href="http://www.google.com" target="_self">
+    </section>
+    <section className="navbar-section">
+      <a className="mr-1 btn btn-link" href="http://www.google.com" target="_self">
         Shop
       </a>
+      <Link className="mr-1 btn btn-link" to="/products">
+        Products
+      </Link>
+      <Link className="mr-1 btn btn-link" to="/what">
+        What Is It?
+      </Link>
       <Link className="btn btn-link" to="/about">
         About Us
-      </Link>
-      <Link className="mx-1 btn btn-link" to="/products">
-        Contact
       </Link>
     </section>
   </header>
