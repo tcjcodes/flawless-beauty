@@ -1,19 +1,19 @@
-import { css, cx } from 'emotion'
-import styled from 'react-emotion'
-import React from 'react'
-import Script from 'react-load-script'
-import goldBg from '../img/goldgradient.jpeg'
-import bg0 from '../img/eyeshadow.jpeg'
-import bg3 from '../img/eyesense.jpeg'
-import bg1 from '../img/redlips2.jpeg'
-import bg2 from '../img/katemaxlips.jpg'
-import './_index-page.scss'
+import { css, cx } from 'emotion';
+import styled from 'react-emotion';
+import React from 'react';
+import Script from 'react-load-script';
+import goldBg from '../img/goldgradient.jpeg';
+import bg0 from '../img/eyeshadow.jpeg';
+import bg3 from '../img/eyesense.jpeg';
+import bg1 from '../img/redlips2.jpeg';
+import bg2 from '../img/katemaxlips.jpg';
+import './_index-page.scss';
 
-import './index'
+import './index';
 
 const GridRow = ({ children }) => (
   <div className="flex-container">{children}</div>
-)
+);
 
 const GoldText = styled('div')`
   position: relative;
@@ -22,7 +22,7 @@ const GoldText = styled('div')`
   background: linear-gradient(transparent, transparent),
     url(${goldBg}) center repeat;
   -webkit-background-clip: text;
-`
+`;
 
 const GridItem = ({ className, children, color, bg }) => (
   <div
@@ -40,7 +40,7 @@ const GridItem = ({ className, children, color, bg }) => (
       <GoldText>{children}</GoldText>
     </div>
   </div>
-)
+);
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -48,12 +48,12 @@ export default class IndexPage extends React.Component {
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
           window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/'
-          })
+            document.location.href = '/admin/';
+          });
         }
-      })
+      });
     }
-    window.netlifyIdentity.init()
+    window.netlifyIdentity.init();
   }
 
   render() {
@@ -106,6 +106,6 @@ export default class IndexPage extends React.Component {
           </GridRow>
         </div>
       </section>
-    )
+    );
   }
 }

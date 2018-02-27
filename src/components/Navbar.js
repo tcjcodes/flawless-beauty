@@ -1,12 +1,12 @@
-import { css } from 'emotion'
-import Link from 'gatsby-link'
-import React from 'react'
-import logo from '../img/logo.png'
-import './_navbar.scss'
+import { css } from 'emotion';
+import Link from 'gatsby-link';
+import React from 'react';
+import logo from '../img/logosm.png';
+import './_navbar.scss';
 
 const navbarFlex = css`
   justify-content: center;
-`
+`;
 
 const Navbar = () => (
   <div className="fb-navbar">
@@ -46,6 +46,6 @@ const Navbar = () => (
       </section>
     </header>
   </div>
-)
+);
 
-export default Navbar
+export default Navbar;

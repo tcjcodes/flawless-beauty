@@ -1,7 +1,7 @@
-import React from 'react'
-import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import './_footer.scss'
+import React from 'react';
+import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import './_footer.scss';
 
 export const Footer = () => (
   <footer className="fb-footer">
@@ -19,14 +19,14 @@ export const Footer = () => (
             <div className="d-flex text-center">
               <a
                 className="btn btn-primary btn-action circle mr-1"
-                href="#"
+                href="https://www.facebook.com/flawlessbeautyenc/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a
                 className="btn btn-primary btn-action circle ml-1"
-                href="#"
+                href="https://www.instagram.com/flawless_beauty_enc/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faInstagram} />
@@ -62,10 +62,10 @@ export const Footer = () => (
                 required
               />
             </div>
-            <button class="btn btn btn-primary">Send</button>
+            <button className="btn btn btn-primary">Send</button>
           </div>
         </div>
       </form>
     </div>
   </footer>
-)
+);

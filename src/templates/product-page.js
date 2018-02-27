@@ -1,8 +1,8 @@
-import React from 'react'
-import graphql from 'graphql'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
+import React from 'react';
+import graphql from 'graphql';
+import Features from '../components/Features';
+import Testimonials from '../components/Testimonials';
+import Pricing from '../components/Pricing';
 
 export const ProductPageTemplate = ({
   image,
@@ -103,10 +103,10 @@ export const ProductPageTemplate = ({
       </div>
     </div>
   </section>
-)
+);
 
 export default ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <ProductPageTemplate
@@ -120,58 +120,58 @@ export default ({ data }) => {
       fullImage={frontmatter.full_image}
       pricing={frontmatter.pricing}
     />
-  )
-}
+  );
+};
 
-export const productPageQuery = graphql`
-  query ProductPage($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      frontmatter {
-        title
-        path
-        image
-        heading
-        description
-        intro {
-          blurbs {
-            image
-            text
-          }
-          heading
-          description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image
-          }
-          image2 {
-            alt
-            image
-          }
-          image3 {
-            alt
-            image
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-        full_image
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
-          }
-        }
-      }
-    }
-  }
-`
+// export const productPageQuery = graphql`
+//   query ProductPage($path: String!) {
+//     markdownRemark(frontmatter: { path: { eq: $path } }) {
+//       frontmatter {
+//         title
+//         path
+//         image
+//         heading
+//         description
+//         intro {
+//           blurbs {
+//             image
+//             text
+//           }
+//           heading
+//           description
+//         }
+//         main {
+//           heading
+//           description
+//           image1 {
+//             alt
+//             image
+//           }
+//           image2 {
+//             alt
+//             image
+//           }
+//           image3 {
+//             alt
+//             image
+//           }
+//         }
+//         testimonials {
+//           author
+//           quote
+//         }
+//         full_image
+//         pricing {
+//           heading
+//           description
+//           plans {
+//             description
+//             items
+//             plan
+//             price
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

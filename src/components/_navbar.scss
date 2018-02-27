@@ -17,4 +17,9 @@
   .image {
     margin: 0.5em;
   }
+  .navbar-brand,.btn-link {
+    &:focus {
+      box-shadow: none; // override
+    }
+  }
 }
