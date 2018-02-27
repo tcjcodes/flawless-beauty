@@ -10,14 +10,6 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .flex-item {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em;
-    border: 1px solid $light-color;
-  }
   .flex-cell {
     text-transform: uppercase;
     flex: 0 0 20%;
@@ -41,5 +33,14 @@
       background: $white;
       border: 2px solid $gold;
     }
+  }
+
+  .flex-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    border: 1px solid $light-color;
   }
 }
