@@ -1,6 +1,10 @@
 @import '../utils/variables';
 
 .fb-index-page {
+  background: url(../img/diamondshape600.jpg) center repeat;
+
+  padding: 1.5em 0;
+
   .flex-container {
     display: flex;
     justify-content: center;
@@ -13,6 +17,7 @@
     justify-content: center;
     align-items: stretch;
     box-sizing: border-box;
+
   }
   .flex-cell:before {
     content: '';
@@ -29,18 +34,17 @@
 
   }
   .flex-pink {
-    border: 0px solid #E1B656;
+    border: 0px solid $gold;
   }
   .landing-box {
     text-transform: uppercase;
-    letter-spacing: 3px;
 
     &.box-gray {
       color: $white;
     }
     &.box-pink {
-      border: 1px solid #E1B656;
-      //color: $dark-gray;
+      background: $white;
+      border: 2px solid $gold;
     }
   }
 }

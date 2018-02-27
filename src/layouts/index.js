@@ -1,4 +1,3 @@
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { ThemeProvider } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -6,7 +5,7 @@ import Helmet from 'react-helmet';
 import Navbar from '../components/Navbar';
 import theme from '../utils/theme';
 import './_index.scss';
-import { faFacebookSquare, faInstagram } from '@fortawesome/fontawesome-free-brands';
+import {Footer} from "../components/Footer";
 
 const TemplateWrapper = ({ data, children }) => (
   <ThemeProvider theme={theme}>
@@ -15,16 +14,7 @@ const TemplateWrapper = ({ data, children }) => (
       <div className="fb-tw-container">
         <Navbar />
         <div>{children()}</div>
-        <footer className="fb-footer">
-          <div className="d-flex text-center centered">
-            <a className='social-icon text-light mx-1' href="#" target="_blank">
-              <FontAwesomeIcon size='2x' icon={faFacebookSquare} />
-            </a>
-            <a className='social-icon text-light mx-1' href="#" target="_blank">
-              <FontAwesomeIcon size='2x' icon={faInstagram} />
-            </a>
-          </div>
-        </footer>
+        <Footer/>
       </div>
     </div>
   </ThemeProvider>

@@ -22,12 +22,19 @@ const GoldText = styled('div')`
   background: linear-gradient(transparent, transparent),
     url(${goldBg}) center repeat;
   -webkit-background-clip: text;
+      letter-spacing: 4px;
+  transition: letter-spacing 0.2s;
+  
+  &:hover {
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
 `;
 
 const GridItem = ({ className, children, color, bg }) => (
   <div
     className={cx(
-      `flex-cell landing-box m-2 box-${color}`,
+      `flex-cell text-center landing-box m-2 box-${color}`,
         css`
           background-color: lightgray;
           background: url(${bg}) center no-repeat;
@@ -70,33 +77,33 @@ export default class IndexPage extends React.Component {
               `}
               color="pink"
             >
-              Shop
+              Shop<br/>All
             </GridItem>
             <GridItem color="gray" bg={bg1} />
-            <GridItem
-              className={css`
-                font-size: 1.5em;
-              `}
-              color="pink"
-            >
-              What is it?
-            </GridItem>
-          </GridRow>
-          <GridRow>
             <GridItem
               className={css`
                 font-size: 1.75em;
               `}
               color="pink"
             >
-              LipSense
+              What <br/> is it?
+            </GridItem>
+          </GridRow>
+          <GridRow>
+            <GridItem
+              className={css`
+                font-size: 2.25em;
+              `}
+              color="pink"
+            >
+              LIPS
             </GridItem>
             <GridItem color="gray" bg={bg2} />
             <GridItem
               className={css`
-                font-size: 1.25em;
+                font-size: 2.25em;
               `}
-              color="pink">ShadowSense
+              color="pink">EYES
             </GridItem>
             <GridItem color="gray" bg={bg3} />
           </GridRow>
