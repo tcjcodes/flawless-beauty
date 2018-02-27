@@ -9,7 +9,7 @@ export const Footer = () => (
       <form action="" className="form-horizontal">
         <div className="columns">
           <div className="column col-5 col-ml-auto">
-            <h3 className='text-primary'>Contact Us</h3>
+            <h3 className=''>Contact Us</h3>
             <p>For questions or general inquiries, feel free to send us a message.</p>
 
             <p>Follow us on social media!</p>

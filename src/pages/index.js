@@ -3,9 +3,9 @@ import styled from 'react-emotion';
 import React from 'react';
 import Script from 'react-load-script';
 import goldBg from '../img/goldgradient.jpeg';
-import bg1 from '../img/eyes.jpeg';
+import bg0 from '../img/eyeshadow.jpeg';
 import bg3 from '../img/eyesense.jpeg';
-import bg0 from '../img/lips.jpeg';
+import bg1 from '../img/redlips2.jpeg';
 import bg2 from '../img/katemaxlips.jpg';
 import './_index-page.scss';
 

@@ -1,7 +1,7 @@
 import { css } from 'emotion';
 import Link from 'gatsby-link';
 import React from 'react';
-import logo from '../img/logo.png';
+import logo from '../img/logo3.png';
 import './_navbar.scss';
 
 const navbarFlex = css`
