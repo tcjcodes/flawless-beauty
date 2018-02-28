@@ -1,0 +1,23 @@
+@import './variables';
+@import '~spectre.css/src/spectre';
+@import '~spectre.css/src/spectre-exp';
+@import '~spectre.css/src/spectre-icons';
+
+$border-radius: $unit-1;
+
+.form-input {
+  &:focus {
+    @include control-shadow($dark-gray);
+    border-color: $dark-gray;
+  }
+}
+
+.card {
+  border: $border-width solid $light-gray;
+  .card-title {
+    letter-spacing: 2px;
+  }
+  .card-body {
+    font-size: $unit-4;
+  }
+}

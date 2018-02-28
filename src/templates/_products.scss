@@ -1,0 +1,33 @@
+.fb-product-page {
+  padding-bottom: 3em;
+  .container {
+    background: #fff;
+  }
+  .next-row {
+    margin-top: 2.5em;
+  }
+  .fb-card-link {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card {
+      transition: all 0.3s;
+      box-shadow: none;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+      }
+    }
+    .card-body {
+      height: 135px;
+    }
+    .card-title {
+      min-height: 60px;
+    }
+    .text-container {
+      max-height: 5em;
+    }
+  }
+}

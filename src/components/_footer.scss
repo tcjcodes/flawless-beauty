@@ -1,0 +1,9 @@
+@import '../utils/variables';
+
+.fb-footer {
+  color: $dark-gray;
+  .container {
+    background: $light-gray;
+    padding: 2.5em 0;
+  }
+}

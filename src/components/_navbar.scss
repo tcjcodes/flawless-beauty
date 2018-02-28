@@ -1,12 +1,27 @@
-.fb-navbar {
-  .navbar-flex {
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 1.5em;
+@import '../utils/variables';
+
+.fb-navbar-wrapper {
+  .fb-navbar {
+    background: $white;
+    padding-bottom: 0.5em;
   }
 
-  .logo-wrapper {
-    margin-top: 3em;
+  .bordered {
+    border: 2px solid $gold;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+  .btn-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .image {
+    margin: 0.5em;
+  }
+  .navbar-brand,.btn-link {
+    &:focus {
+      box-shadow: none; // override
+    }
   }
 }

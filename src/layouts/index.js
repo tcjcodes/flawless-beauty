@@ -5,14 +5,16 @@ import Helmet from 'react-helmet';
 import Navbar from '../components/Navbar';
 import theme from '../utils/theme';
 import './_index.scss';
+import { Footer } from '../components/Footer';
 
 const TemplateWrapper = ({ data, children }) => (
   <ThemeProvider theme={theme}>
-    <div className='fb-template-wrapper'>
+    <div className="flawess-beauty fb-template-wrapper">
       <Helmet title={data.site.siteMetadata.title} />
-      <div className='fb-tw-container container grid-lg'>
+      <div className="fb-tw-container">
         <Navbar />
         <div>{children()}</div>
+        <Footer />
       </div>
     </div>
   </ThemeProvider>

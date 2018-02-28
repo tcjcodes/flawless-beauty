@@ -2,12 +2,16 @@
 @import '../utils/common-styles';
 
 .fb-template-wrapper {
-  background: $white;
+  height: 100%;
 
   .fb-tw-container {
     min-height: 100vh;
-    border: 1px solid gray;
+    background: $white;
+    background: url(../img/elegantgolden.jpg) top repeat;
+    //background: url(../img/diamondshape600.jpg) center repeat;
+
   }
 }
 
-@import '~spectre.css/src/spectre';
+@import '../utils/theme-overrides';
+//@import '~spectre.css/src/spectre';

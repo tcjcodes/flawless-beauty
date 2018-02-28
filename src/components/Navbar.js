@@ -1,37 +1,51 @@
+import { css } from 'emotion';
 import Link from 'gatsby-link';
 import React from 'react';
+import logo from '../img/logosm.png';
 import './_navbar.scss';
 
-const Navbar = () => (
-  <header className='fb-navbar navbar'>
-    <section className='navbar-section'>
-      <div className='flex-cols navbar-flex'>
-        <div className='logo-wrapper'>
-          <Link to='/'>
-            {/*<figure className='image'>*/}
-              {/*<img src={logo} alt='Flawless Beauty' className={css`width: 300;`} />*/}
-            {/*</figure>*/}
-            <h1 className='fb-script'>Flawless Beauty</h1>
-          </Link>
-        </div>
+const navbarFlex = css`
+  justify-content: center;
+`;
 
-        <div className={``}>
-          <Link className='mx-1 btn btn-link' to='/products'>
-            Products
-          </Link>
-          <a className='mx-1 btn btn-link' href='http://www.google.com' target='_self'>
+const Navbar = () => (
+  <div className="fb-navbar-wrapper">
+    <header className="fb-navbar navbar fb-bold container grid-lg">
+      <section className={`navbar-section centered ${navbarFlex}`}>
+        <div className="bordered py-1">
+          <a
+            className="mr-2 btn btn-link"
+            href="http://www.google.com"
+            target="_self"
+          >
             Shop
           </a>
-          <Link className='mx-1 btn btn-link' to='/about'>
-            About Us
-          </Link>
-          <Link className='mx-1 btn btn-link' to='/products'>
-            Contact
+          <Link className="mx-2 btn btn-link" to="/products">
+            Products
           </Link>
         </div>
-      </div>
-    </section>
-  </header>
+        <Link className="navbar-brand mx-2" to="/">
+          <figure className="image">
+            <img
+              src={logo}
+              alt="Flawless Beauty"
+              className={css`
+                width: 310px;
+              `}
+            />
+          </figure>
+        </Link>
+        <div className="bordered py-1">
+          <Link className="mx-2 btn btn-link" to="/what">
+            What Is It?
+          </Link>
+          <Link className="btn btn-link" to="/about">
+            About Us
+          </Link>
+        </div>
+      </section>
+    </header>
+  </div>
 );
 
 export default Navbar;
