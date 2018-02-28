@@ -41,7 +41,7 @@ export const ProductPageTemplate = (
     <div className="container grid-md">
       <h1 className="">Products</h1>
 
-      <h2 className="fb-script">Lips</h2>
+      <h2 id="lips" className="fb-script">Lips</h2>
 
       <section className="columns mb-2">
         <div className="column">
@@ -75,7 +75,7 @@ export const ProductPageTemplate = (
 
       <section className="columns next-row">
         <div className="column col-4">
-          <h2 className="fb-script">Eyes</h2>
+          <h2 id="eyes" className="fb-script">Eyes</h2>
 
           <div className="column">
             <Card to="/" img={shadowsense} title="ShadowSense">

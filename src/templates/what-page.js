@@ -6,6 +6,7 @@ import shadowsenseImg from '../img/eyesense.jpeg';
 import lipsenseImg from '../img/jessoshiilipsense.jpg';
 import { css, cx } from 'emotion';
 import styled from 'react-emotion';
+import Link from 'gatsby-link';
 
 const BorderedImageBox = styled('div')`
   width: 280px;
@@ -48,7 +49,11 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
                 <BorderBox margin="-10px 10px" />
               </BorderedImageBox>
             </div>
-            <div className={cx(`column col-7 d-flex text-col-right ${flexRowVAlign}`)}>
+            <div
+              className={cx(
+                `column col-7 d-flex text-col-right ${flexRowVAlign}`
+              )}
+            >
               <div>
                 <h2 className="fb-script">LipSense</h2>
                 <p>
@@ -58,7 +63,11 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
                   forest-like structure of shade coffee farms provides habitat
                   for a great number of migratory and resident species.
                 </p>
-                <button className="btn centered btn-primary">View Lip Products</button>
+                <div className="text-center">
+                  <Link to='/products#lips' className="btn btn-primary">
+                    View Lip Products
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -77,7 +86,11 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
                   of the coffee is then usually the place it was grown to
                   whatever degree available.
                 </p>
-                <button className="btn centered btn-primary">View Eye Products</button>
+                <div className="text-center">
+                  <Link to='/products#eyes' className="btn btn-primary">
+                    View Eye Products
+                  </Link>
+                </div>
               </div>
             </div>
             <div className={`column col-4 px-2`}>
@@ -87,8 +100,7 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
             </div>
           </div>
 
-          <div className="centered text-center my-2 py-2">
-          </div>
+          <div className="centered text-center my-2 py-2" />
         </div>
       </div>
     </div>
