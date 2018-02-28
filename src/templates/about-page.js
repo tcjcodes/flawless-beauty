@@ -8,7 +8,7 @@ import styled from 'react-emotion';
 const BoxContainer = styled('div')`
   display: inline-block;
   position: relative;
-  margin-top: 1.5em;
+  margin-top: 1em;
 
   &:before {
     display: block;
@@ -36,13 +36,13 @@ const Avatar = () => (
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <div className="fb-about-page fb-section container">
+    <div className="fb-about-page fb-section container grid-lg">
       <div className="columns">
         <div className="column col-4 col-ml-auto">
           <Avatar img={img}/>
         </div>
-        <div className="column col-6 col-mr-auto">
-          <h1 className="fb-page-title">About Us</h1>
+        <div className="column right-col col-6 col-mr-auto">
+          <h1 className="about-title">About Us</h1>
 
           <h3 className="fb-script">Edilene</h3>
           <p>
