@@ -3,122 +3,124 @@ import graphql from 'graphql';
 import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
+import lipsense from '../img/katemaxlips.jpg';
+import shadowsense from '../img/shadowsense.jpg';
+import './_products.scss';
+import { cx, css } from 'emotion';
+import Link from 'gatsby-link'
 
-export const ProductPageTemplate = ({
-  image,
-  title,
-  heading,
-  description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
-}) => (
-  <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
-              >
-                <h2
-                  className="has-text-weight-bold is-size-1"
-                  style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
-                  }}
-                >
-                  {title}
-                </h2>
-              </div>
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-              </div>
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: '5px' }}
-                          src={main.image1.image}
-                          alt={main.image1.alt}
-                        />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: '5px' }}
-                          src={main.image2.image}
-                          alt={main.image2.alt}
-                        />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <img
-                        style={{ borderRadius: '5px' }}
-                        src={main.image3.image}
-                        alt={main.image3.alt}
-                      />
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{ backgroundImage: `url(${fullImage})` }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
-            </div>
+const Card = ({ to, img, title, children }) => (
+  <Link className={css`&:hover{ text-decoration: none; color: inherit; }`} to={to}>
+    <div className={cx(`card`, css`
+          transition: all 0.3s;
+          box-shadow: none;
+          &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .12);
+          }
+          `)}>
+      <div className="card-image">
+        <img src={img} alt={title} className="img-responsive" />
+      </div>
+      <div className="card-header">
+        <div className="h5 card-title">{title}</div>
+      </div>
+      <div className="card-body">
+        {children}
+      </div>
+    </div>
+  </Link>
+);
+
+export const ProductPageTemplate = (
+  {
+    // image,
+    // title,
+    // heading,
+    // description,
+    // intro,
+    // main,
+    // testimonials,
+    // fullImage,
+    // pricing,
+  }
+) => (
+  <section className="fb-product-page container grid-lg fb-section">
+    <div className="container grid-md">
+      <h1 className="">Products</h1>
+
+      <h2 className="fb-script">Lips</h2>
+
+      <section className="columns mb-2">
+        <div className="column">
+          <Card to='/' img={lipsense} title='LipSense'>
+            <p>
+              Our most popular gloss, Coffee is a small tree or shrub that
+              grows in the forest understory in its wild form.
+            </p>
+          </Card>
+        </div>
+
+        <div className="column">
+          <Card to='/' img={lipsense} title='LipSense Diamonds'>
+            <p>
+              Luxury gloss Coffee is a small tree or shrub that
+              grows in the forest understory in its wild form.
+            </p>
+          </Card>
+        </div>
+
+        <div className="column">
+          <Card to='/' img={lipsense} title='LipSense Gloss'>
+            <p>
+              Coffee is a small tree or shrub that
+              grows in the forest understory in its wild form.
+            </p>
+          </Card>
+        </div>
+
+        <div className="column">
+          <Card to='/' img={lipsense} title='Diamond Gloss'>
+            <p>
+              Diamond gloss lorem ipsum, Coffee is a small tree or shrub that
+              grows in the forest understory in its wild form.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <section className="columns mt-2">
+        <div className="column col-4">
+          <h2 className="fb-script">Eyes</h2>
+
+          <div className="column">
+            <Card to='/' img={shadowsense} title='ShadowSense'>
+              <p>
+                EyeShadow Coffee is a small tree or shrub that
+                grows in the forest understory in its wild form.
+              </p>
+            </Card>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </section>
 );
 
 export default ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  // const { frontmatter } = data.markdownRemark;
 
   return (
     <ProductPageTemplate
-      image={frontmatter.image}
-      title={frontmatter.title}
-      heading={frontmatter.heading}
-      description={frontmatter.description}
-      intro={frontmatter.intro}
-      main={frontmatter.main}
-      testimonials={frontmatter.testimonials}
-      fullImage={frontmatter.full_image}
-      pricing={frontmatter.pricing}
+    // image={frontmatter.image}
+    // title={frontmatter.title}
+    // heading={frontmatter.heading}
+    // description={frontmatter.description}
+    // intro={frontmatter.intro}
+    // main={frontmatter.main}
+    // testimonials={frontmatter.testimonials}
+    // fullImage={frontmatter.full_image}
+    // pricing={frontmatter.pricing}
     />
   );
 };
