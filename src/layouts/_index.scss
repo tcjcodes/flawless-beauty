@@ -5,8 +5,11 @@
   height: 100%;
 
   .fb-tw-container {
-    height: 100vh;
+    min-height: 100vh;
     background: $white;
+    background: url(../img/elegantgolden.jpg) top repeat;
+    //background: url(../img/diamondshape600.jpg) center repeat;
+
   }
 }
 

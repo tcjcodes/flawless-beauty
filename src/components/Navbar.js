@@ -9,8 +9,8 @@ const navbarFlex = css`
 `;
 
 const Navbar = () => (
-  <div className="fb-navbar">
-    <header className="navbar fb-bold container grid-lg">
+  <div className="fb-navbar-wrapper">
+    <header className="fb-navbar navbar fb-bold container grid-lg">
       <section className={`navbar-section centered ${navbarFlex}`}>
         <div className="bordered py-1">
           <a

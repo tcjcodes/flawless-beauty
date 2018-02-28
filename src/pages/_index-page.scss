@@ -1,8 +1,10 @@
 @import '../utils/variables';
 
 .fb-index-page {
-  background: url(../img/diamondshape600.jpg) center repeat;
-  padding: 1.5em 0;
+  .row-container {
+    padding: 1.5em 0 4em 0;
+    background: rgba(255,255,255,1.0);
+  }
 
   .flex-container {
     display: flex;

@@ -9,3 +9,13 @@ $border-radius: $unit-1;
     border-color: $dark-gray;
   }
 }
+
+.card {
+  border: $border-width solid $light-gray;
+  .card-title {
+    letter-spacing: 2px;
+  }
+  .card-body {
+    font-size: $unit-4;
+  }
+}

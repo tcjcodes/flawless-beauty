@@ -55,7 +55,7 @@ const ColumnCard = ({ name, img, children }) => (
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <div className="fb-about-page container grid-md text-center">
+    <div className="fb-about-page fb-section container grid-md text-center">
       <h1 className="fb-page-title">About Us</h1>
       <div className="columns">
         <ColumnCard name="Edilene" img={eImg}>

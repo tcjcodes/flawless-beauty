@@ -1,8 +1,10 @@
 @import '../utils/variables';
 
-.fb-navbar {
-  background: $white;
-  padding-bottom: 0.5em;
+.fb-navbar-wrapper {
+  .fb-navbar {
+    background: $white;
+    padding-bottom: 0.5em;
+  }
 
   .bordered {
     border: 2px solid $gold;

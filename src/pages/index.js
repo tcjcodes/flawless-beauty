@@ -59,12 +59,12 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <section className="fb-index-page section">
+      <section className="fb-index-page ">
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container grid-xl">
+        <div className="row-container container grid-lg">
           <GridRow>
             <GridItem bg={bg0} />
             <GridItem fontSize='2em'>
