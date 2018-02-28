@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default ({ data }) => (
   <div className="columns">
@@ -23,4 +23,4 @@ export default ({ data }) => (
       </div>
     ))}
   </div>
-)
+);

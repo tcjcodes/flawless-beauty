@@ -1,11 +1,11 @@
-import { ThemeProvider } from 'emotion-theming'
-import PropTypes from 'prop-types'
-import React from 'react'
-import Helmet from 'react-helmet'
-import Navbar from '../components/Navbar'
-import theme from '../utils/theme'
-import './_index.scss'
-import { Footer } from '../components/Footer'
+import { ThemeProvider } from 'emotion-theming';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Helmet from 'react-helmet';
+import Navbar from '../components/Navbar';
+import theme from '../utils/theme';
+import './_index.scss';
+import { Footer } from '../components/Footer';
 
 const TemplateWrapper = ({ data, children }) => (
   <ThemeProvider theme={theme}>
@@ -18,7 +18,7 @@ const TemplateWrapper = ({ data, children }) => (
       </div>
     </div>
   </ThemeProvider>
-)
+);
 
 export const pageQuery = graphql`
   query TemplateWrapperQuery {
@@ -28,11 +28,11 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
 TemplateWrapper.propTypes = {
   data: PropTypes.any,
   children: PropTypes.func,
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

@@ -8,19 +8,24 @@ import { css } from 'emotion';
 import Carousel from '../../components/Carousel';
 
 export const ProductTemplate = ({ img, title }) => {
-  const items = [{
-    img: image0,
-    name: 'slide-0'
-  }, {
-    img: image1,
-    name: 'slide-1'
-  }, {
-    img: image,
-    name: 'slide-2'
-  }, {
-    img: image2,
-    name: 'slide-3'
-  }];
+  const items = [
+    {
+      img: image0,
+      name: 'slide-0',
+    },
+    {
+      img: image1,
+      name: 'slide-1',
+    },
+    {
+      img: image,
+      name: 'slide-2',
+    },
+    {
+      img: image2,
+      name: 'slide-3',
+    },
+  ];
   return (
     <div className="fb-product-page fb-section container grid-lg">
       <div className="container grid-md">

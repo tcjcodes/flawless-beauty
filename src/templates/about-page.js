@@ -19,7 +19,7 @@ const BoxContainer = styled('div')`
     bottom: 10px;
     left: 10px;
 
-    border: 2px solid ${props => props.theme.gold};
+    border: 2px solid ${(props) => props.theme.gold};
   }
 `;
 const BoxImage = styled('img')`
@@ -39,7 +39,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <div className="fb-about-page fb-section container grid-lg">
       <div className="columns">
         <div className="column col-4 col-ml-auto">
-          <Avatar img={img}/>
+          <Avatar img={img} />
         </div>
         <div className="column right-col col-6 col-mr-auto">
           <h1 className="about-title">About Us</h1>

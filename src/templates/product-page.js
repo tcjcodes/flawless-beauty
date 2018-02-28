@@ -41,41 +41,45 @@ export const ProductPageTemplate = (
     <div className="container grid-md">
       <h1 className="">Products</h1>
 
-      <h2 id="lips" className="fb-script">Lips</h2>
+      <h2 id="lips" className="fb-script">
+        Lips
+      </h2>
 
       <section className="columns mb-2">
         <div className="column">
           <Card to="/" img={lipsense} title="LipSense">
-              Our most popular gloss, Coffee is a small tree or shrub that grows
-              in the forest understory in its wild form.
+            Our most popular gloss, Coffee is a small tree or shrub that grows
+            in the forest understory in its wild form.
           </Card>
         </div>
 
         <div className="column">
           <Card to="/" img={lipsense} title="LipSense Diamonds">
-              Luxury gloss Coffee is a small tree or shrub that grows in the
-              forest understory in its wild form.
+            Luxury gloss Coffee is a small tree or shrub that grows in the
+            forest understory in its wild form.
           </Card>
         </div>
 
         <div className="column">
           <Card to="/" img={lipsense} title="LipSense Gloss">
-              Coffee is a small tree or shrub that grows in the forest
-              understory in its wild form.
+            Coffee is a small tree or shrub that grows in the forest understory
+            in its wild form.
           </Card>
         </div>
 
         <div className="column">
           <Card to="/" img={lipsense} title="Diamond Gloss">
-              Diamond gloss lorem ipsum, Coffee is a small tree or shrub that
-              grows in the forest understory in its wild form.
+            Diamond gloss lorem ipsum, Coffee is a small tree or shrub that
+            grows in the forest understory in its wild form.
           </Card>
         </div>
       </section>
 
       <section className="columns next-row">
         <div className="column col-4">
-          <h2 id="eyes" className="fb-script">Eyes</h2>
+          <h2 id="eyes" className="fb-script">
+            Eyes
+          </h2>
 
           <div className="column">
             <Card to="/" img={shadowsense} title="ShadowSense">

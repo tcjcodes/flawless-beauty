@@ -64,7 +64,7 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
                   for a great number of migratory and resident species.
                 </p>
                 <div className="text-center">
-                  <Link to='/products#lips' className="btn btn-primary">
+                  <Link to="/products#lips" className="btn btn-primary">
                     View Lip Products
                   </Link>
                 </div>
@@ -87,7 +87,7 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
                   whatever degree available.
                 </p>
                 <div className="text-center">
-                  <Link to='/products#eyes' className="btn btn-primary">
+                  <Link to="/products#eyes" className="btn btn-primary">
                     View Eye Products
                   </Link>
                 </div>

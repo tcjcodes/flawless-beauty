@@ -32,9 +32,9 @@ const GridItem = ({ fontSize, className, children, bg }) => (
         background-color: lightgray;
         background: url(${bg}) center no-repeat;
         background-size: cover;
-        font-size: ${fontSize}
+        font-size: ${fontSize};
       `,
-      { 'text-box': !bg },
+      { 'text-box': !bg }
     )}
   >
     <div className="flex-item">
@@ -67,22 +67,18 @@ export default class IndexPage extends React.Component {
         <div className="row-container container grid-lg">
           <GridRow>
             <GridItem bg={bg0} />
-            <GridItem fontSize='2em'>
+            <GridItem fontSize="2em">
               Shop<br />All
             </GridItem>
             <GridItem bg={bg1} />
-            <GridItem fontSize='1.75em'>
+            <GridItem fontSize="1.75em">
               What<br />is it?
             </GridItem>
           </GridRow>
           <GridRow>
-            <GridItem fontSize='2.25em'>
-              LIPS
-            </GridItem>
+            <GridItem fontSize="2.25em">LIPS</GridItem>
             <GridItem bg={bg2} />
-            <GridItem fontSize='2.25em'>
-              EYES
-            </GridItem>
+            <GridItem fontSize="2.25em">EYES</GridItem>
             <GridItem bg={bg3} />
           </GridRow>
         </div>

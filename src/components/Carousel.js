@@ -46,7 +46,11 @@ const Carousel = ({ items }) => (
       ))}
       <div className="carousel-nav">
         {items.map(({ name }, index) => (
-          <label key={name} className="nav-item text-hide c-hand" htmlFor={name}>
+          <label
+            key={name}
+            className="nav-item text-hide c-hand"
+            htmlFor={name}
+          >
             {name}
           </label>
         ))}
