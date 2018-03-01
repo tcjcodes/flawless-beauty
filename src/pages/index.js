@@ -1,12 +1,12 @@
 import { css, cx } from 'emotion';
-import styled from 'react-emotion';
 import React from 'react';
+import styled from 'react-emotion';
 import Script from 'react-load-script';
-import goldBg from '../img/goldgradient.jpeg';
-import bg0 from '../img/eyeshadow.jpeg';
 import bg3 from '../img/eyesense.jpeg';
-import bg1 from '../img/redlips2.jpeg';
+import bg0 from '../img/eyeshadow.jpeg';
+import goldBg from '../img/goldgradient.jpeg';
 import bg2 from '../img/katemaxlips.jpg';
+import bg1 from '../img/redlips2.jpeg';
 import './_index-page.scss';
 
 import './index';
@@ -19,12 +19,11 @@ const GoldText = styled('div')`
   position: relative;
   color: #c3a343;
   text-fill-color: transparent;
-  background: linear-gradient(transparent, transparent),
-    url(${goldBg}) center repeat;
+  background: linear-gradient(transparent, transparent), url(${goldBg}) center repeat;
   -webkit-background-clip: text;
 `;
 
-const GridItem = ({ fontSize, className, children, bg }) => (
+const GridItem = ({ fontSize, children, bg }) => (
   <div
     className={cx(
       `text-center flex-cell m-2`,

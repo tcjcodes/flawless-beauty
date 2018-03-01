@@ -14,13 +14,13 @@ const Navbar = () => (
       <section className={`navbar-section centered ${navbarFlex}`}>
         <div className="bordered py-1">
           <a
-            className="mr-2 btn btn-link"
+            className="hide-md mr-2 btn btn-link"
             href="http://www.google.com"
             target="_self"
           >
             Shop
           </a>
-          <Link className="mx-2 btn btn-link" to="/products">
+          <Link className="hide-md mx-2 btn btn-link" to="/products">
             Products
           </Link>
         </div>
