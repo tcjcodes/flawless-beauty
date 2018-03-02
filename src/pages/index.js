@@ -10,6 +10,7 @@ import bg1 from '../img/redlips2.jpeg';
 import './_index-page.scss';
 
 import './index';
+import LayoutSection from '../components/LayoutSection';
 
 const GridRow = ({ children }) => (
   <div className="flex-container">{children}</div>
@@ -19,14 +20,15 @@ const GoldText = styled('div')`
   position: relative;
   color: #c3a343;
   text-fill-color: transparent;
-  background: linear-gradient(transparent, transparent), url(${goldBg}) center repeat;
+  background: linear-gradient(transparent, transparent),
+    url(${goldBg}) center repeat;
   -webkit-background-clip: text;
 `;
 
 const GridItem = ({ fontSize, children, bg }) => (
   <div
     className={cx(
-      `text-center flex-cell m-2`,
+      `fb-grid-item text-center flex-cell m-2`,
       css`
         background-color: lightgray;
         background: url(${bg}) center no-repeat;
@@ -63,12 +65,14 @@ export default class IndexPage extends React.Component {
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="row-container container grid-lg">
+        <LayoutSection className="row-container">
           <GridRow>
             <GridItem bg={bg0} />
             <GridItem fontSize="2em">
               Shop<br />All
             </GridItem>
+          </GridRow>
+          <GridRow>
             <GridItem bg={bg1} />
             <GridItem fontSize="1.75em">
               What<br />is it?
@@ -77,10 +81,12 @@ export default class IndexPage extends React.Component {
           <GridRow>
             <GridItem fontSize="2.25em">LIPS</GridItem>
             <GridItem bg={bg2} />
+          </GridRow>
+          <GridRow>
             <GridItem fontSize="2.25em">EYES</GridItem>
             <GridItem bg={bg3} />
           </GridRow>
-        </div>
+        </LayoutSection>
       </section>
     );
   }

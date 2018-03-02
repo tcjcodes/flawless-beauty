@@ -2,10 +2,11 @@ import React from 'react';
 import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import './_footer.scss';
+import LayoutSection from './LayoutSection';
 
 export const Footer = () => (
   <footer className="fb-footer">
-    <div className="container grid-lg">
+    <LayoutSection className="container grid-lg">
       <form action="" className="form-horizontal">
         <div className="columns">
           <div className="column col-5 col-ml-auto">
@@ -66,6 +67,6 @@ export const Footer = () => (
           </div>
         </div>
       </form>
-    </div>
+    </LayoutSection>
   </footer>
 );

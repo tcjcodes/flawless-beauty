@@ -15,19 +15,19 @@ export const DesktopXl = (props) => {
   return <Responsive {...props} minWidth={xxl + 1} />;
 };
 export const DesktopLg = (props) => {
-  return <Responsive {...props} minWidth={xl + 1} maxWidth={xxl} />;
+  return <Responsive {...props} maxWidth={xxl} />;
 };
 export const Desktop = (props) => {
-  return <Responsive {...props} minWidth={lg + 1} maxWidth={xl} />;
+  return <Responsive {...props} maxWidth={xl} />;
 };
 export const Tablet = (props) => {
-  return <Responsive {...props} minWidth={md + 1} maxWidth={lg} />;
+  return <Responsive {...props} maxWidth={lg} />;
 };
 export const Phablet = (props) => {
-  return <Responsive {...props} minWidth={sm + 1} maxWidth={md} />;
+  return <Responsive {...props} maxWidth={md} />;
 };
 export const Phone = (props) => {
-  return <Responsive {...props} minWidth={xs + 1} maxWidth={sm} />;
+  return <Responsive {...props} maxWidth={sm} />;
 };
 export const Mini = (props) => {
   return <Responsive {...props} maxWidth={xs} />;

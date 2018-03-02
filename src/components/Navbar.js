@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import React from 'react';
 import logo from '../img/logosm.png';
 import './_navbar.scss';
+import LayoutSection from './LayoutSection';
 
 const navbarFlex = css`
   justify-content: center;
@@ -10,11 +11,12 @@ const navbarFlex = css`
 
 const Navbar = () => (
   <div className="fb-navbar-wrapper">
-    <header className="fb-navbar navbar fb-bold container grid-lg">
+    <LayoutSection
+      className="fb-navbar navbar fb-bold">
       <section className={`navbar-section centered ${navbarFlex}`}>
         <div className="bordered py-1 d-flex left-nav">
           <a
-            className="hide-md mr-2 btn btn-link"
+            className="hide-md mx-2 btn btn-link"
             href="http://www.google.com"
             target="_self"
           >
@@ -37,12 +39,12 @@ const Navbar = () => (
           <Link className="hide-md mx-2 btn btn-link" to="/what">
             What Is It?
           </Link>
-          <Link className="hide-md btn btn-link" to="/about">
+          <Link className="hide-md mx-2 btn btn-link" to="/about">
             About Us
           </Link>
         </div>
       </section>
-    </header>
+    </LayoutSection>
   </div>
 );
 
