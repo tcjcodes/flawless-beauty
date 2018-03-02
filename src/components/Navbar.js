@@ -12,7 +12,7 @@ const Navbar = () => (
   <div className="fb-navbar-wrapper">
     <header className="fb-navbar navbar fb-bold container grid-lg">
       <section className={`navbar-section centered ${navbarFlex}`}>
-        <div className="bordered py-1">
+        <div className="bordered py-1 d-flex left-nav">
           <a
             className="hide-md mr-2 btn btn-link"
             href="http://www.google.com"
@@ -29,17 +29,15 @@ const Navbar = () => (
             <img
               src={logo}
               alt="Flawless Beauty"
-              className={css`
-                width: 310px;
-              `}
+              className="fb-logo"
             />
           </figure>
         </Link>
-        <div className="bordered py-1">
-          <Link className="mx-2 btn btn-link" to="/what">
+        <div className="bordered py-1 d-flex">
+          <Link className="hide-md mx-2 btn btn-link" to="/what">
             What Is It?
           </Link>
-          <Link className="btn btn-link" to="/about">
+          <Link className="hide-md btn btn-link" to="/about">
             About Us
           </Link>
         </div>

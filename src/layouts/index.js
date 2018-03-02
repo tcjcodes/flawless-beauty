@@ -14,7 +14,7 @@ const sidebarId = 'sidebarNav';
 const SidebarNavButton = ({ onClick }) => (
   <a
     href={`#${sidebarId}`}
-    className="off-canvas-toggle btn btn-primary btn-action"
+    className="show-md off-canvas-toggle btn btn-primary btn-action"
     onClick={onClick}
   >
     <i className="icon icon-menu" />
