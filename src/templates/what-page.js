@@ -8,13 +8,19 @@ import { css, cx } from 'emotion';
 import styled from 'react-emotion';
 import Link from 'gatsby-link';
 
-const BorderedImageBox = styled('div')`
-  width: 280px;
-  height: 280px;
-  position: relative;
-  background: url(${(props) => props.bg}) center no-repeat;
-  background-size: cover;
-`;
+const BorderedImageBox = ({ bg, children }) => (
+  <div
+    className={cx(
+      'bordered-image-box',
+      css`
+        background: url(${bg}) center no-repeat;
+        background-size: cover;
+      `
+    )}
+  >
+    {children}
+  </div>
+);
 
 const BorderBox = styled('div')`
   width: 100%;
@@ -44,14 +50,14 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
         <div className="container grid-md">
           <h1 className="text-center center-block fb-page-title">{title}</h1>
           <div className="columns">
-            <div className={`column col-4 mx-2 px-2`}>
+            <div className={`column col-4 col-md-12 mx-2 px-2`}>
               <BorderedImageBox bg={lipsenseImg}>
                 <BorderBox margin="-10px 10px" />
               </BorderedImageBox>
             </div>
             <div
               className={cx(
-                `column col-7 d-flex text-col-right ${flexRowVAlign}`
+                `column col-7 col-md-12 d-flex text-col-right ${flexRowVAlign}`
               )}
             >
               <div>
@@ -74,7 +80,7 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
           <div className="columns eye-row">
             <div
               className={cx(
-                `column col-7 col-ml-auto d-flex text-col-left ${flexRowVAlign}`
+                `column col-7 col-md-12 col-ml-auto d-flex text-col-left ${flexRowVAlign}`
               )}
             >
               <div>
@@ -93,7 +99,7 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
                 </div>
               </div>
             </div>
-            <div className={`column col-4 px-2`}>
+            <div className={`column col-md-12 col-4 px-2`}>
               <BorderedImageBox bg={shadowsenseImg}>
                 <BorderBox margin="-10px -10px" />
               </BorderedImageBox>
