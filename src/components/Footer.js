@@ -6,10 +6,10 @@ import LayoutSection from './LayoutSection';
 
 export const Footer = () => (
   <footer className="fb-footer">
-    <LayoutSection className="container grid-lg">
-      <form action="" className="form-horizontal">
+    <LayoutSection>
+      <form action="" className="fb-form form-horizontal">
         <div className="columns">
-          <div className="column col-5 col-ml-auto">
+          <div className="column col-md-5 col-sm-12 col-ml-auto">
             <h3 className="">Contact Us</h3>
             <p>
               For questions or general inquiries, feel free to send us a
@@ -17,7 +17,7 @@ export const Footer = () => (
             </p>
 
             <p>Follow us on social media!</p>
-            <div className="d-flex text-center">
+            <div className="d-flex text-center mb-2">
               <a
                 className="btn btn-primary btn-action circle mr-1"
                 href="https://www.facebook.com/flawlessbeautyenc/"
@@ -34,8 +34,8 @@ export const Footer = () => (
               </a>
             </div>
           </div>
-          <div className="divider-vert" />
-          <div className="column col-5 col-mr-auto">
+          <div className="hide-sm divider-vert" />
+          <div className="column col-md-5 col-sm-12 col-mr-auto">
             <div className="form-group">
               <input
                 className="form-input"
