@@ -1,4 +1,4 @@
-import { css, cx } from 'emotion';
+import { cx } from 'emotion';
 import { ThemeProvider } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -21,15 +21,12 @@ const SidebarNavButton = ({ onClick }) => (
   </a>
 );
 
-const displayBlock = css`display: block;`;
-
 const OffCanvasOverlay = ({ onClick, isDisplaying }) => (
   <div
     onClick={onClick}
     className={cx(`off-canvas-overlay`, { 'fb-d-block': isDisplaying })}
   />
 );
-
 
 const OffCanvasSidebar = () => (
   <div id={sidebarId} className="off-canvas-sidebar p-2">
@@ -48,7 +45,7 @@ class OffCanvasContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ sidebarOpen: window.location.hash === `#${sidebarId}`});
+    this.setState({ sidebarOpen: window.location.hash === `#${sidebarId}` });
   }
 
   toggleSidebar() {
@@ -65,7 +62,10 @@ class OffCanvasContainer extends React.Component {
             })}
           >
             <SidebarNavButton onClick={this.toggleSidebar} />
-            <OffCanvasOverlay onClick={this.toggleSidebar} isDisplaying={this.state.sidebarOpen} />
+            <OffCanvasOverlay
+              onClick={this.toggleSidebar}
+              isDisplaying={this.state.sidebarOpen}
+            />
             <OffCanvasSidebar isOpen={this.state.sidebarOpen} />
 
             {this.props.children}

@@ -1,11 +1,11 @@
-import React from 'react';
-import lipsense from '../img/katemaxlips.jpg';
-import shadowsense from '../img/shadowsense.jpg';
-import './_products.scss';
 import Link from 'gatsby-link';
+import React from 'react';
 import Dotdotdot from 'react-dotdotdot';
 import LayoutSection from '../components/LayoutSection';
 import SmallButton from '../components/SmallButton';
+import lipsense from '../img/katemaxlips.jpg';
+import shadowsense from '../img/shadowsense.jpg';
+import './_products.scss';
 
 const Card = ({ to, img, title, children }) => (
   <div className="col-3 col-md-6 col-sm-12 px-1">
@@ -41,7 +41,7 @@ export const ProductPageTemplate = (
     // pricing,
   }
 ) => (
-  <LayoutSection className="fb-product-page container grid-lg fb-section">
+  <LayoutSection className="fb-product-page">
     <div className="container grid-md">
       <h1 className="">Products</h1>
 

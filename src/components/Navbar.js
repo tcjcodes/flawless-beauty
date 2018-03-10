@@ -11,8 +11,7 @@ const navbarFlex = css`
 
 const Navbar = () => (
   <div className="fb-navbar-wrapper">
-    <LayoutSection
-      className="fb-navbar navbar fb-bold">
+    <LayoutSection className="fb-navbar navbar fb-bold">
       <section className={`navbar-section centered ${navbarFlex}`}>
         <div className="bordered py-1 d-flex left-nav">
           <a
@@ -28,11 +27,7 @@ const Navbar = () => (
         </div>
         <Link className="navbar-brand mx-2" to="/">
           <figure className="image">
-            <img
-              src={logo}
-              alt="Flawless Beauty"
-              className="fb-logo"
-            />
+            <img src={logo} alt="Flawless Beauty" className="fb-logo" />
           </figure>
         </Link>
         <div className="bordered py-1 d-flex">
