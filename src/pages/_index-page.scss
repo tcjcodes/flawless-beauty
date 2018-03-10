@@ -49,5 +49,18 @@
     align-items: center;
     margin: 0.5em;
     border: 1px solid $light-color;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .gold-text {
+
   }
 }
