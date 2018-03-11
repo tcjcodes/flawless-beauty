@@ -10,6 +10,9 @@ $border-radius: $unit-1;
     @include control-shadow($dark-gray);
     border-color: $dark-gray;
   }
+  &:invalid {
+    box-shadow: none;
+  }
 }
 
 .card {

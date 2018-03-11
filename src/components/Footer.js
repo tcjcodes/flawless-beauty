@@ -4,17 +4,17 @@ import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import './_footer.scss';
 import LayoutSection from './LayoutSection';
+import ContactFormSection from './ContactForm';
 
 export const Footer = () => (
   <footer className="fb-footer">
     <LayoutSection>
-      <form action="" className="p-2 fb-form form-horizontal">
+      <div className="p-2 fb-form form-horizontal">
         <div className="columns my-2">
           <div className="column col-md-5 col-sm-12">
             <h3 className="">Contact Us</h3>
             <p>
-              For questions, orders, or general inquiries, send us a
-              message!
+              For questions, orders, or general inquiries, send us a message!
             </p>
 
             <p>Follow us on social media!</p>
@@ -43,37 +43,10 @@ export const Footer = () => (
           </div>
           <div className="hide-sm divider-vert" />
           <div className="column col-md-6 col-sm-12">
-            <div id="contact" className="form-group">
-              <input
-                className="form-input"
-                type="text"
-                id="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                className="form-input"
-                type="text"
-                id="email"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                className="form-input textarea-sm"
-                id="message"
-                rows="3"
-                placeholder="Message"
-                required
-              />
-            </div>
-            <button className="btn btn btn-primary">Send</button>
+            <ContactFormSection />
           </div>
         </div>
-      </form>
+      </div>
     </LayoutSection>
   </footer>
 );

@@ -43,8 +43,8 @@ const OffCanvasSidebar = ({ isOpen }) => (
     )}
   >
     <ul className="nav">
-      {navItems.map(({ name, to }) => (
-        <li className="nav-item">
+      {navItems.map(({ name, to }, index) => (
+        <li key={index} className="nav-item">
           <Link className="px-2 mx-2" to={to}>
             {name}
           </Link>

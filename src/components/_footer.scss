@@ -13,5 +13,10 @@
     .column {
       margin-bottom: 1em;
     }
+    a {
+      &:not(.btn) {
+        color: $primary-color;
+      }
+    }
   }
 }
