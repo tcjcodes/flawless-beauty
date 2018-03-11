@@ -1,7 +1,7 @@
 import { css } from 'emotion';
 import Link from 'gatsby-link';
 import React from 'react';
-import logo from '../img/logosm.png';
+import logo from '../img/fblogosm.png';
 import './_navbar.scss';
 import LayoutSection from './LayoutSection';
 

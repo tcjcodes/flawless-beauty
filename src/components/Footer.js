@@ -8,9 +8,9 @@ import LayoutSection from './LayoutSection';
 export const Footer = () => (
   <footer className="fb-footer">
     <LayoutSection>
-      <form action="" className="fb-form form-horizontal">
-        <div className="columns">
-          <div className="column col-md-5 col-sm-12 col-ml-auto">
+      <form action="" className="p-2 fb-form form-horizontal">
+        <div className="columns my-2">
+          <div className="column col-md-5 col-sm-12">
             <h3 className="">Contact Us</h3>
             <p>
               For questions, orders, or general inquiries, send us a
@@ -42,7 +42,7 @@ export const Footer = () => (
             </div>
           </div>
           <div className="hide-sm divider-vert" />
-          <div className="column col-md-5 col-sm-12 col-mr-auto">
+          <div className="column col-md-6 col-sm-12">
             <div id="contact" className="form-group">
               <input
                 className="form-input"

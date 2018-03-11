@@ -6,8 +6,8 @@ import lipsense from '../img/katemaxlips.jpg';
 import shadowsense from '../img/shadowsense.jpg';
 import './_products.scss';
 
-const Card = ({ img, title, children }) => (
-  <div className="col-3 col-md-6 col-sm-12 px-1">
+const Card = ({ img, title, children, ...otherProps }) => (
+  <div {...otherProps} className="col-3 col-md-6 col-sm-12 px-1">
     <div className="fb-card-link">
       <div className="card">
         <div className="card-image">
@@ -42,12 +42,12 @@ export const ProductPageTemplate = (
     <div className="container grid-md">
       <h1 className="">Products</h1>
 
-      <h2 id="lips" className="fb-script">
+      <h2 className="fb-script">
         Lips
       </h2>
 
       <section className="columns mb-2">
-        <Card img={lipsense} title="LipSense">
+        <Card id="lips" img={lipsense} title="LipSense">
           Our most popular gloss, Coffee is a small tree or shrub that grows in
           the forest understory in its wild form.
         </Card>
@@ -68,11 +68,11 @@ export const ProductPageTemplate = (
         </Card>
       </section>
       <div className="next-row">
-        <h2 id="eyes" className="fb-script">
+        <h2 className="fb-script">
           Eyes
         </h2>
         <section className="columns next-row">
-          <Card to="/" img={shadowsense} title="ShadowSense">
+          <Card id="eyes" img={shadowsense} title="ShadowSense">
             EyeShadow Coffee is a small tree or shrub that grows in the forest
             understory in its wild form.
           </Card>

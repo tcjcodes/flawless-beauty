@@ -1,4 +1,5 @@
 @import '../utils/variables';
+@import '~spectre.css/src/variables';
 
 .fb-footer {
   color: $dark-gray;
@@ -6,7 +7,9 @@
     background: $light-gray;
   }
   .fb-form {
-    padding: 2.5em;
+    @media(min-width: $size-sm) {
+      padding: 2em;
+    }
     .column {
       margin-bottom: 1em;
     }
