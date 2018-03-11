@@ -8,6 +8,6 @@ static/admin/*.bundle.*
 .DS_Store
 yarn-error.log
 
-/.idea/*
-!/.idea/codeStyles
-
+/.idea/
+/.idea/workspace.xml
+!/.idea/codeStyles/codeStyleConfig.xml
