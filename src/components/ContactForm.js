@@ -84,17 +84,6 @@ class ContactForm extends React.Component {
           />
         </div>
         <div className="form-group">
-          <input
-            className="form-input"
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject (Optional)"
-            onChange={this.handleChange}
-            maxLength="200"
-          />
-        </div>
-        <div className="form-group">
           <textarea
             className="form-input textarea-sm"
             id="message"
