@@ -61,33 +61,33 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <section className="fb-index-page ">
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={() => this.handleScriptLoad()}
-        />
         <LayoutSection className="row-container">
           <GridRow>
             <GridItem bg={bg0} />
-            <GridItem fontSize="2em">
-              <Link to="/products">View<br/>All</Link>
-            </GridItem>
+            <Link to="/products">
+              <GridItem fontSize="2em">
+                View<br />All
+              </GridItem>
+            </Link>
           </GridRow>
           <GridRow>
             <GridItem bg={bg1} />
-            <GridItem fontSize="1.75em">
-              <Link to="/what">What<br />is it?</Link>
-            </GridItem>
+            <Link to="/what">
+              <GridItem fontSize="1.75em">
+                What<br />is it?
+              </GridItem>
+            </Link>
           </GridRow>
           <GridRow>
-            <GridItem fontSize="2.25em">
-              <Link to="/products#lips">Lips</Link>
-            </GridItem>
+            <Link to="/products#lips">
+              <GridItem fontSize="2.25em">Lips</GridItem>
+            </Link>
             <GridItem bg={bg2} />
           </GridRow>
           <GridRow>
-            <GridItem fontSize="2.25em">
-              <Link to="/products#eyes">Eyes</Link>
-            </GridItem>
+            <Link to="/products#eyes">
+              <GridItem fontSize="2.25em">Eyes</GridItem>
+            </Link>
             <GridItem bg={bg3} />
           </GridRow>
         </LayoutSection>
