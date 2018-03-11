@@ -26,8 +26,7 @@ class ContactForm extends React.Component {
     if (!this.validateEmail(this.state)) {
       return;
     }
-    this.props.afterError();
-/*    fetch('/', {
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...this.state }),
@@ -38,7 +37,7 @@ class ContactForm extends React.Component {
       .catch((error) => {
         this.props.afterError && this.props.afterError();
         console.error(error);
-      })*/;
+      });
     e.preventDefault();
   };
 
