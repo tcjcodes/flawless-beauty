@@ -67,6 +67,7 @@ class ContactForm extends React.Component {
             name="name"
             placeholder="Name"
             onChange={this.handleChange}
+            maxLength="50"
             required
           />
         </div>
@@ -78,7 +79,19 @@ class ContactForm extends React.Component {
             name="email"
             placeholder="Email"
             onChange={this.handleChange}
+            maxLength="100"
             required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            className="form-input"
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject (Optional)"
+            onChange={this.handleChange}
+            maxLength="200"
           />
         </div>
         <div className="form-group">
@@ -89,6 +102,7 @@ class ContactForm extends React.Component {
             rows="3"
             placeholder="Message"
             onChange={this.handleChange}
+            maxLength="2000"
             required
           />
         </div>
