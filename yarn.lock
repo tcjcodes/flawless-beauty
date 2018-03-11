@@ -27,6 +27,12 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.1.3"
 
+"@fortawesome/fontawesome-free-regular@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free-regular/-/fontawesome-free-regular-5.0.8.tgz#feaa96ee230e7f0d685ede3ae512aa6a1dca2480"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.3"
+
 "@fortawesome/fontawesome@^1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome/-/fontawesome-1.1.4.tgz#03065638046206c2226e103b550196934c75be9b"
@@ -2266,6 +2272,10 @@ css-selector-tokenizer@^0.7.0:
 css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
+
+css.escape@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/css.escape/-/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
 
 cssesc@^0.1.0:
   version "0.1.0"
@@ -8550,6 +8560,17 @@ slug@^0.9.1:
   resolved "https://registry.yarnpkg.com/slug/-/slug-0.9.1.tgz#af08f608a7c11516b61778aa800dce84c518cfda"
   dependencies:
     unicode ">= 0.3.1"
+
+smooth-anchorate@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/smooth-anchorate/-/smooth-anchorate-1.2.1.tgz#045e968b732d31f7d43f6ae2428f87732522cfdc"
+  dependencies:
+    css.escape "1.5.1"
+    smoothscroll-polyfill "0.3.4"
+
+smoothscroll-polyfill@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.3.4.tgz#6f59459788b6b8a7e21d223ef674151d1e3ddefd"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

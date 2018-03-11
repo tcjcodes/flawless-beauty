@@ -2,14 +2,13 @@ import Link from 'gatsby-link';
 import React from 'react';
 import Dotdotdot from 'react-dotdotdot';
 import LayoutSection from '../components/LayoutSection';
-import SmallButton from '../components/SmallButton';
 import lipsense from '../img/katemaxlips.jpg';
 import shadowsense from '../img/shadowsense.jpg';
 import './_products.scss';
 
-const Card = ({ to, img, title, children }) => (
+const Card = ({ img, title, children }) => (
   <div className="col-3 col-md-6 col-sm-12 px-1">
-    <Link className="fb-card-link" to={to}>
+    <div className="fb-card-link">
       <div className="card">
         <div className="card-image">
           <img src={img} alt={title} className="img-responsive" />
@@ -20,11 +19,9 @@ const Card = ({ to, img, title, children }) => (
         <div className="card-body">
           <Dotdotdot clamp={5}>{children}</Dotdotdot>
         </div>
-        <div className="card-footer">
-          <SmallButton className="btn-primary">Shop</SmallButton>
-        </div>
+        <div className="card-footer" />
       </div>
-    </Link>
+    </div>
   </div>
 );
 
@@ -50,22 +47,22 @@ export const ProductPageTemplate = (
       </h2>
 
       <section className="columns mb-2">
-        <Card to="/" img={lipsense} title="LipSense">
+        <Card img={lipsense} title="LipSense">
           Our most popular gloss, Coffee is a small tree or shrub that grows in
           the forest understory in its wild form.
         </Card>
 
-        <Card to="/" img={lipsense} title="LipSense Diamonds">
+        <Card img={lipsense} title="LipSense Diamonds">
           Luxury gloss Coffee is a small tree or shrub that grows in the forest
           understory in its wild form.
         </Card>
 
-        <Card to="/" img={lipsense} title="LipSense Gloss">
+        <Card img={lipsense} title="LipSense Gloss">
           Coffee is a small tree or shrub that grows in the forest understory in
           its wild form.
         </Card>
 
-        <Card to="/" img={lipsense} title="Diamond Gloss">
+        <Card img={lipsense} title="Diamond Gloss">
           Diamond gloss lorem ipsum, Coffee is a small tree or shrub that grows
           in the forest understory in its wild form.
         </Card>

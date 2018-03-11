@@ -8,17 +8,17 @@ import Navbar from '../components/Navbar';
 import { PhabletRange } from '../utils/responsive';
 import theme from '../utils/theme';
 import './_index.scss';
+import Link from 'gatsby-link';
 
 const sidebarId = 'sidebarNav';
 
 const SidebarNavButton = ({ onClick }) => (
-  <a
-    href={`#${sidebarId}`}
+  <button
     className="show-md off-canvas-toggle btn btn-primary btn-action"
     onClick={onClick}
   >
     <i className="icon icon-menu" />
-  </a>
+  </button>
 );
 
 const OffCanvasOverlay = ({ onClick, isDisplaying }) => (
@@ -28,11 +28,28 @@ const OffCanvasOverlay = ({ onClick, isDisplaying }) => (
   />
 );
 
-const OffCanvasSidebar = () => (
-  <div id={sidebarId} className="off-canvas-sidebar p-2">
+const navItems = [
+  { name: 'Products', to: '/products' },
+  { name: 'What Is It?', to: '/what' },
+  { name: 'About Us', to: '/about' },
+  { name: 'Contact', to: '#contact' },
+];
+const OffCanvasSidebar = ({ isOpen }) => (
+  <div
+    id={sidebarId}
+    className={cx(
+      'off-canvas-sidebar p-2',
+      { 'show-sidebar': isOpen }
+    )}
+  >
     <ul className="nav">
-      <li className="nav-item">Home</li>
-      <li className="nav-item">Home</li>
+      {navItems.map(({ name, to }) => (
+        <li className="nav-item">
+          <Link className="px-2 mx-2" to={to}>
+            {name}
+          </Link>
+        </li>
+      ))}
     </ul>
   </div>
 );
@@ -66,8 +83,8 @@ class OffCanvasContainer extends React.Component {
               onClick={this.toggleSidebar}
               isDisplaying={this.state.sidebarOpen}
             />
-            <OffCanvasSidebar isOpen={this.state.sidebarOpen} />
-
+            <OffCanvasSidebar
+              isOpen={this.state.sidebarOpen} />
             {this.props.children}
           </div>
         )}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { faEnvelope } from '@fortawesome/fontawesome-free-regular';
 import { faFacebookF, faInstagram } from '@fortawesome/fontawesome-free-brands';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import './_footer.scss';
@@ -12,8 +13,8 @@ export const Footer = () => (
           <div className="column col-md-5 col-sm-12 col-ml-auto">
             <h3 className="">Contact Us</h3>
             <p>
-              For questions or general inquiries, feel free to send us a
-              message.
+              For questions, orders, or general inquiries, send us a
+              message!
             </p>
 
             <p>Follow us on social media!</p>
@@ -26,17 +27,23 @@ export const Footer = () => (
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a
-                className="btn btn-primary btn-action circle ml-1"
+                className="btn btn-primary btn-action circle mx-1"
                 href="https://www.instagram.com/flawless_beauty_enc/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
+              <a
+                className="btn btn-primary btn-action circle ml-1"
+                href="mailto:info@flawlessbeautyenc.com"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
             </div>
           </div>
           <div className="hide-sm divider-vert" />
           <div className="column col-md-5 col-sm-12 col-mr-auto">
-            <div className="form-group">
+            <div id="contact" className="form-group">
               <input
                 className="form-input"
                 type="text"

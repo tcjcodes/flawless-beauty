@@ -10,8 +10,10 @@
     .off-canvas-content {
       padding: 0;
     }
-    .off-canvas-sidebar:target {
-
+    .off-canvas-sidebar {
+      &.show-sidebar {
+        transform: translateX(0);
+      }
     }
     .fb-d-block {
       // Conditionally added, overrides .off-canvas-overlay with increased specificity

@@ -14,15 +14,11 @@ const Navbar = () => (
     <LayoutSection className="fb-navbar navbar fb-bold">
       <section className={`navbar-section centered ${navbarFlex}`}>
         <div className="bordered py-1 d-flex left-nav">
-          <a
-            className="hide-md mx-2 btn btn-link"
-            href="http://www.google.com"
-            target="_self"
-          >
-            Shop
-          </a>
           <Link className="hide-md mx-2 btn btn-link" to="/products">
             Products
+          </Link>
+          <Link className="hide-md mx-2 btn btn-link" to="/what">
+            What Is It?
           </Link>
         </div>
         <Link className="navbar-brand mx-2" to="/">
@@ -31,12 +27,12 @@ const Navbar = () => (
           </figure>
         </Link>
         <div className="bordered py-1 d-flex">
-          <Link className="hide-md mx-2 btn btn-link" to="/what">
-            What Is It?
-          </Link>
           <Link className="hide-md mx-2 btn btn-link" to="/about">
             About Us
           </Link>
+          <a className="hide-md mx-2 btn btn-link" href="#contact">
+            Contact
+          </a>
         </div>
       </section>
     </LayoutSection>
