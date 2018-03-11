@@ -2,7 +2,6 @@ import { css, cx } from 'emotion';
 import Link from 'gatsby-link';
 import React from 'react';
 import styled from 'react-emotion';
-import Script from 'react-load-script';
 import LayoutSection from '../components/LayoutSection';
 import bg3 from '../img/eyesense.jpeg';
 import bg0 from '../img/eyeshadow.jpeg';
@@ -45,19 +44,6 @@ const GridItem = ({ fontSize, children, bg }) => (
 );
 
 export default class IndexPage extends React.Component {
-  handleScriptLoad() {
-    if (typeof window !== `undefined` && window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', (user) => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
-          });
-        }
-      });
-    }
-    window.netlifyIdentity.init();
-  }
-
   render() {
     return (
       <section className="fb-index-page ">
