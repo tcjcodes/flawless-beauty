@@ -2,16 +2,24 @@
 @import '../utils/common-styles';
 
 .fb-template-wrapper {
-  height: 100%;
-
   .fb-tw-container {
-    min-height: 100vh;
     background: $white;
     background: url(../img/elegantgolden.jpg) top repeat;
     //background: url(../img/diamondshape600.jpg) center repeat;
 
+    .off-canvas-content {
+      padding: 0;
+    }
+    .off-canvas-sidebar {
+      &.show-sidebar {
+        transform: translateX(0);
+      }
+    }
+    .fb-d-block {
+      // Conditionally added, overrides .off-canvas-overlay with increased specificity
+      display: block;
+    }
   }
 }
 
 @import '../utils/theme-overrides';
-//@import '~spectre.css/src/spectre';

@@ -1,6 +1,7 @@
 import React from 'react';
 import graphql from 'graphql';
 import Content, { HTMLContent } from '../components/Content';
+import LayoutSection from '../components/LayoutSection';
 import img from '../img/aboutus.jpeg';
 import './_about.scss';
 import styled from 'react-emotion';
@@ -8,7 +9,7 @@ import styled from 'react-emotion';
 const BoxContainer = styled('div')`
   display: inline-block;
   position: relative;
-  margin-top: 1em;
+  margin: 1em auto;
 
   &:before {
     display: block;
@@ -24,24 +25,21 @@ const BoxContainer = styled('div')`
 `;
 const BoxImage = styled('img')`
   vertical-align: middle;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 `;
-
-const Avatar = () => (
-  <BoxContainer>
-    <BoxImage src={img} />
-  </BoxContainer>
-);
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
   return (
-    <div className="fb-about-page fb-section container grid-lg">
+    <LayoutSection className="fb-about-page">
       <div className="columns">
-        <div className="column col-4 col-ml-auto">
-          <Avatar img={img} />
+        <div className="column col-md-12 col-4 col-ml-auto text-center">
+          <BoxContainer>
+            <BoxImage src={img} />
+          </BoxContainer>
         </div>
-        <div className="column right-col col-6 col-mr-auto">
+        <div className="column right-col col-md-12 col-6 col-mr-auto">
           <h1 className="about-title">About Us</h1>
 
           <h3 className="fb-script">Edilene</h3>
@@ -62,7 +60,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           </p>
         </div>
       </div>
-    </div>
+    </LayoutSection>
   );
 };
 

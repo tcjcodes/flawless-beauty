@@ -1,9 +1,24 @@
-.fb-what-page {
+@import '~spectre.css/src/variables';
 
+.fb-what-page {
+  .column-left {
+    .bordered-image-box {
+      @media (min-width: $size-sm) {
+        float: right;
+      }
+    }
+  }
+  .bordered-image-box {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    margin-bottom: 1em;
+  }
   .text-col-right {
     margin-left: 1.25em;
   }
   .eye-row {
     margin-top: 3em;
+    flex-direction: row-reverse;
   }
 }

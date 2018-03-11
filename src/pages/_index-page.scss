@@ -1,9 +1,13 @@
+@import '~spectre.css/src/variables';
 @import '../utils/variables';
 
 .fb-index-page {
   .row-container {
     padding: 1.5em 0 4em 0;
     background: rgba(255,255,255,1.0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
   }
 
   .flex-container {
@@ -21,6 +25,7 @@
     box-sizing: border-box;
     letter-spacing: 4px;
     transition: letter-spacing 0.2s;
+    min-width: 200px;
 
     &:before {
       content: '';
@@ -29,14 +34,21 @@
     }
     &:hover {
       letter-spacing: 7px;
-      cursor: pointer;
     }
     &.text-box {
       background: $white;
       border: 2px solid $gold;
     }
   }
-
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
   .flex-item {
     flex-grow: 1;
     display: flex;

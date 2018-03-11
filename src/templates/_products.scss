@@ -1,8 +1,6 @@
+@import '~spectre.css/src/variables';
+
 .fb-product-page {
-  padding-bottom: 3em;
-  .container {
-    background: #fff;
-  }
   .next-row {
     margin-top: 2.5em;
   }
@@ -15,13 +13,19 @@
     .card {
       transition: all 0.3s;
       box-shadow: none;
+      margin-bottom: 0.5em;
       &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+        @media (min-width: $size-md) {
+          transform: scale(1.1);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+        }
       }
     }
     .card-body {
-      height: 135px;
+      padding-top: 0.5em;
+      @media (min-width: $size-sm) {
+        height: 135px;
+      }
     }
     .card-title {
       min-height: 60px;

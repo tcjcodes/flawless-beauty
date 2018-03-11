@@ -1,27 +1,28 @@
+import Link from 'gatsby-link';
 import React from 'react';
+import Dotdotdot from 'react-dotdotdot';
+import LayoutSection from '../components/LayoutSection';
 import lipsense from '../img/katemaxlips.jpg';
 import shadowsense from '../img/shadowsense.jpg';
 import './_products.scss';
-import Link from 'gatsby-link';
-import Dotdotdot from 'react-dotdotdot';
 
-const Card = ({ to, img, title, children }) => (
-  <Link className="fb-card-link" to={to}>
-    <div className="card">
-      <div className="card-image">
-        <img src={img} alt={title} className="img-responsive" />
-      </div>
-      <div className="card-header">
-        <div className="h5 card-title">{title}</div>
-      </div>
-      <div className="card-body">
-        <Dotdotdot clamp={5}>{children}</Dotdotdot>
-      </div>
-      <div className="card-footer">
-        <button className="btn btn-sm btn-primary">Shop</button>
+const Card = ({ img, title, children, ...otherProps }) => (
+  <div {...otherProps} className="col-3 col-md-6 col-sm-12 px-1">
+    <div className="fb-card-link">
+      <div className="card">
+        <div className="card-image">
+          <img src={img} alt={title} className="img-responsive" />
+        </div>
+        <div className="card-header">
+          <div className="h5 card-title">{title}</div>
+        </div>
+        <div className="card-body">
+          <Dotdotdot clamp={5}>{children}</Dotdotdot>
+        </div>
+        <div className="card-footer" />
       </div>
     </div>
-  </Link>
+  </div>
 );
 
 export const ProductPageTemplate = (
@@ -37,62 +38,48 @@ export const ProductPageTemplate = (
     // pricing,
   }
 ) => (
-  <section className="fb-product-page container grid-lg fb-section">
+  <LayoutSection className="fb-product-page">
     <div className="container grid-md">
       <h1 className="">Products</h1>
 
-      <h2 id="lips" className="fb-script">
+      <h2 className="fb-script">
         Lips
       </h2>
 
       <section className="columns mb-2">
-        <div className="column">
-          <Card to="/" img={lipsense} title="LipSense">
-            Our most popular gloss, Coffee is a small tree or shrub that grows
-            in the forest understory in its wild form.
-          </Card>
-        </div>
+        <Card id="lips" img={lipsense} title="LipSense">
+          Our most popular gloss, Coffee is a small tree or shrub that grows in
+          the forest understory in its wild form.
+        </Card>
 
-        <div className="column">
-          <Card to="/" img={lipsense} title="LipSense Diamonds">
-            Luxury gloss Coffee is a small tree or shrub that grows in the
-            forest understory in its wild form.
-          </Card>
-        </div>
+        <Card img={lipsense} title="LipSense Diamonds">
+          Luxury gloss Coffee is a small tree or shrub that grows in the forest
+          understory in its wild form.
+        </Card>
 
-        <div className="column">
-          <Card to="/" img={lipsense} title="LipSense Gloss">
-            Coffee is a small tree or shrub that grows in the forest understory
-            in its wild form.
-          </Card>
-        </div>
+        <Card img={lipsense} title="LipSense Gloss">
+          Coffee is a small tree or shrub that grows in the forest understory in
+          its wild form.
+        </Card>
 
-        <div className="column">
-          <Card to="/" img={lipsense} title="Diamond Gloss">
-            Diamond gloss lorem ipsum, Coffee is a small tree or shrub that
-            grows in the forest understory in its wild form.
-          </Card>
-        </div>
+        <Card img={lipsense} title="Diamond Gloss">
+          Diamond gloss lorem ipsum, Coffee is a small tree or shrub that grows
+          in the forest understory in its wild form.
+        </Card>
       </section>
-
-      <section className="columns next-row">
-        <div className="column col-4">
-          <h2 id="eyes" className="fb-script">
-            Eyes
-          </h2>
-
-          <div className="column">
-            <Card to="/" img={shadowsense} title="ShadowSense">
-              <p>
-                EyeShadow Coffee is a small tree or shrub that grows in the
-                forest understory in its wild form.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <div className="next-row">
+        <h2 className="fb-script">
+          Eyes
+        </h2>
+        <section className="columns next-row">
+          <Card id="eyes" img={shadowsense} title="ShadowSense">
+            EyeShadow Coffee is a small tree or shrub that grows in the forest
+            understory in its wild form.
+          </Card>
+        </section>
+      </div>
     </div>
-  </section>
+  </LayoutSection>
 );
 
 export default ({ data }) => {

@@ -1,4 +1,5 @@
 @import '../utils/variables';
+@import '~spectre.css/src/variables';
 
 .fb-navbar-wrapper {
   .fb-navbar {
@@ -10,16 +11,30 @@
     border: 2px solid $gold;
     border-left-width: 0;
     border-right-width: 0;
+    height: 48px;
+    flex-grow: 1;
+
+    &.left-nav {
+      justify-content: flex-end;
+    }
   }
   .btn-link {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-
+  .fb-logo {
+    @media (min-width: $size-sm + 1) {
+      width: 310px;
+    }
+    @media (max-width: $size-md) {
+      width: 210px;
+    }
+  }
   .image {
     margin: 0.5em;
   }
-  .navbar-brand,.btn-link {
+  .navbar-brand,
+  .btn-link {
     &:focus {
       box-shadow: none; // override
     }
