@@ -28,9 +28,8 @@ module.exports = {
         name: 'images',
       },
     },
-    // TODO doesn't work over proxy
-    // 'gatsby-plugin-sharp',
-    // 'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
