@@ -22,6 +22,7 @@
       }
     }
     .card-body {
+      font-size: $font-size-sm;
       padding-top: 0.5em;
       @media (min-width: $size-sm) {
         height: 135px;

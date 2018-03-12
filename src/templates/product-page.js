@@ -1,4 +1,3 @@
-import Link from 'gatsby-link';
 import React from 'react';
 import Dotdotdot from 'react-dotdotdot';
 import LayoutSection from '../components/LayoutSection';
@@ -17,7 +16,7 @@ const Card = ({ img, title, children, ...otherProps }) => (
           <div className="h5 card-title">{title}</div>
         </div>
         <div className="card-body">
-          <Dotdotdot clamp={5}>{children}</Dotdotdot>
+          <Dotdotdot clamp={7}>{children}</Dotdotdot>
         </div>
         <div className="card-footer" />
       </div>
@@ -42,24 +41,25 @@ export const ProductPageTemplate = (
     <div className="container grid-md">
       <h1 className="">Products</h1>
 
-      <h2 className="fb-script">
-        Lips
-      </h2>
+      <h2 className="fb-script">Lips</h2>
 
       <section className="columns mb-2">
         <Card id="lips" img={lipsense} title="LipSense">
-          Our most popular gloss, Coffee is a small tree or shrub that grows in
-          the forest understory in its wild form.
+          The original long-lasting lip color, it is waterproof, does{' '}
+          <strong>not</strong> kiss-off, smear-off, rub-off or budge-off!
         </Card>
 
         <Card img={lipsense} title="LipSense Diamonds">
-          Luxury gloss Coffee is a small tree or shrub that grows in the forest
-          understory in its wild form.
+          LipSense Diamond shades feature the original long-lasting LipSense
+          formula with genuine crushed diamond gemstones blended in for
+          incredible sparkle.
         </Card>
 
         <Card img={lipsense} title="LipSense Gloss">
-          Coffee is a small tree or shrub that grows in the forest understory in
-          its wild form.
+          Moisturizing Glosses not only cover and protect naked lips but also
+          improve the longevity (staying power) of LipSense Liquid Lip Color.
+          Gloss provides exceptional protection from the elements and helps
+          repair dry, damaged, chapped and/or sensitive lips.
         </Card>
 
         <Card img={lipsense} title="Diamond Gloss">
@@ -68,13 +68,10 @@ export const ProductPageTemplate = (
         </Card>
       </section>
       <div className="next-row">
-        <h2 className="fb-script">
-          Eyes
-        </h2>
+        <h2 className="fb-script">Eyes</h2>
         <section className="columns next-row">
           <Card id="eyes" img={shadowsense} title="ShadowSense">
-            EyeShadow Coffee is a small tree or shrub that grows in the forest
-            understory in its wild form.
+            LOREM IPSUM DOLORES
           </Card>
         </section>
       </div>
