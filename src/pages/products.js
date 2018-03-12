@@ -24,19 +24,7 @@ const Card = ({ img, title, children, ...otherProps }) => (
   </div>
 );
 
-export const ProductPageTemplate = (
-  {
-    // image,
-    // title,
-    // heading,
-    // description,
-    // intro,
-    // main,
-    // testimonials,
-    // fullImage,
-    // pricing,
-  }
-) => (
+export const ProductPage = () => (
   <LayoutSection className="fb-product-page">
     <div className="container grid-md">
       <h1 className="">Products</h1>
@@ -63,8 +51,7 @@ export const ProductPageTemplate = (
         </Card>
 
         <Card img={lipsense} title="Diamond Gloss">
-          Diamond gloss lorem ipsum, Coffee is a small tree or shrub that grows
-          in the forest understory in its wild form.
+          LOREM IPSUM DOLORES
         </Card>
       </section>
       <div className="next-row">
@@ -79,73 +66,4 @@ export const ProductPageTemplate = (
   </LayoutSection>
 );
 
-export default ({ data }) => {
-  // const { frontmatter } = data.markdownRemark;
-
-  return (
-    <ProductPageTemplate
-    // image={frontmatter.image}
-    // title={frontmatter.title}
-    // heading={frontmatter.heading}
-    // description={frontmatter.description}
-    // intro={frontmatter.intro}
-    // main={frontmatter.main}
-    // testimonials={frontmatter.testimonials}
-    // fullImage={frontmatter.full_image}
-    // pricing={frontmatter.pricing}
-    />
-  );
-};
-
-// export const productPageQuery = graphql`
-//   query ProductPage($path: String!) {
-//     markdownRemark(frontmatter: { path: { eq: $path } }) {
-//       frontmatter {
-//         title
-//         path
-//         image
-//         heading
-//         description
-//         intro {
-//           blurbs {
-//             image
-//             text
-//           }
-//           heading
-//           description
-//         }
-//         main {
-//           heading
-//           description
-//           image1 {
-//             alt
-//             image
-//           }
-//           image2 {
-//             alt
-//             image
-//           }
-//           image3 {
-//             alt
-//             image
-//           }
-//         }
-//         testimonials {
-//           author
-//           quote
-//         }
-//         full_image
-//         pricing {
-//           heading
-//           description
-//           plans {
-//             description
-//             items
-//             plan
-//             price
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export default ProductPage;

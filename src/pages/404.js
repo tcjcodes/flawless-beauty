@@ -1,5 +1,6 @@
 import React from 'react';
 
+// FIXME
 const NotFoundPage = () => (
   <div>
     <h1>NOT FOUND</h1>

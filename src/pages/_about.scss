@@ -1,0 +1,18 @@
+@import '~spectre.css/src/variables';
+
+.fb-about-page {
+  padding-top: 1em;
+  .column {
+    @media (max-width: $size-md) {
+      padding: 1.5em;
+    }
+  }
+  .left-col {
+    align-items: center;
+    @media (max-width: $size-md) {
+      justify-content: center;
+    }
+  }
+  .right-col {
+  }
+}

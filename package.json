@@ -1,8 +1,10 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.0",
-  "author": "Austin Green",
+  "name": "flawless-beauty-enc",
+  "description": "Official website for Flawless Beauty with E&C",
+  "version": "1.0.0",
+  "author": "Trina",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.4",
     "@fortawesome/fontawesome-free-brands": "^5.0.7",
@@ -11,16 +13,12 @@
     "emotion": "^9.0.2",
     "emotion-theming": "^9.0.0",
     "gatsby": "^1.9.63",
-    "gatsby-image": "^1.0.41",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-google-fonts": "^0.0.3",
     "gatsby-plugin-netlify-cms": "^1.0.2",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
-    "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-source-filesystem": "^1.5.5",
-    "gatsby-transformer-remark": "^1.7.17",
-    "gatsby-transformer-sharp": "^1.6.22",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dotdotdot": "^1.2.3",
@@ -35,7 +33,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "start": "npm run develop",
