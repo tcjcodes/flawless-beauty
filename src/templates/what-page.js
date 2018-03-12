@@ -44,10 +44,12 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
       <div className="container grid-md">
         <h1 className="text-center center-block fb-page-title">{title}</h1>
         <div className="columns">
-          <div className={`column col-4 col-md-12 mx-2 px-2`}>
-            <BorderedImageBox bg={lipsenseImg}>
-              <BorderBox margin="-10px 10px" />
-            </BorderedImageBox>
+          <div className={`column col-4 col-md-12 mx-2 px-2 d-flex image-col`}>
+            <div>
+              <BorderedImageBox bg={lipsenseImg}>
+                <BorderBox margin="-10px 10px" />
+              </BorderedImageBox>
+            </div>
           </div>
           <div
             className={cx(
@@ -57,11 +59,22 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
             <div>
               <h2 className="fb-script">LipSense</h2>
               <p>
-                Coffee is a small tree or shrub that grows in the forest
-                understory in its wild form, and traditionally was grown
-                commercially under other trees that provided shade. The
-                forest-like structure of shade coffee farms provides habitat for
-                a great number of migratory and resident species.
+                <strong>LipSense</strong> is gluten-free, vegan, kosher,
+                non-GMO, contains no lead and no animal by-products. SeneGence
+                uses the highest quality ingredients and is made in the USA.
+              </p>
+              <strong>Is LipSense all natural?</strong>
+              <p>
+                True, <strong>natural</strong> pigments, natural Botanicals, raw
+                Shea Butter, and Simulated Bee's Wax.
+              </p>
+              <p>
+                LipSense® and all our Shea butter glosses are Vegan (no animal
+                emulsifiers or animal by-products) and nothing we sell is ever
+                tested on animals.
+              </p>
+              <p>
+                LipSense has NO lead. LipSense is Gluten-Free, NON-GMO & Kosher.
               </p>
               <div className="text-center">
                 <Link to="/products#lips" className="btn btn-primary">
@@ -72,10 +85,12 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
           </div>
         </div>
         <div className="columns eye-row">
-          <div className={`column col-md-12 col-4 px-2`}>
-            <BorderedImageBox bg={shadowsenseImg}>
-              <BorderBox margin="-10px -10px" />
-            </BorderedImageBox>
+          <div className={`column col-md-12 col-4 px-2 image-col`}>
+            <div>
+              <BorderedImageBox bg={shadowsenseImg}>
+                <BorderBox margin="-10px -10px" />
+              </BorderedImageBox>
+            </div>
           </div>
           <div
             className={cx(
@@ -85,11 +100,9 @@ export const WhatPageTemplate = ({ title, content, contentComponent }) => {
             <div>
               <h2 className="fb-script">ShadowSense</h2>
               <p>
-                Single-origin coffee is coffee grown within a single known
-                geographic origin. Sometimes, this is a single farm or a
-                specific collection of beans from a single country. The name of
-                the coffee is then usually the place it was grown to whatever
-                degree available.
+                Experience long-lasting, rich eye shadow shades that start as a
+                crème and finish as a powder on the eyes. Shades can be worn
+                separately or blended to create new colors and looks.
               </p>
               <div className="text-center">
                 <Link to="/products#eyes" className="btn btn-primary">
