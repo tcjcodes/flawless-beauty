@@ -1,8 +1,10 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.0",
-  "author": "Austin Green",
+  "name": "flawless-beauty-enc",
+  "description": "Official website for Flawless Beauty with E&C",
+  "version": "1.0.0",
+  "author": "Trina",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.4",
     "@fortawesome/fontawesome-free-brands": "^5.0.7",
@@ -31,7 +33,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "start": "npm run develop",
