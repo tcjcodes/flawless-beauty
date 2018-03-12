@@ -30,7 +30,7 @@ export const AboutPage = () => {
   return (
     <LayoutSection className="fb-about-page">
       <div className="columns">
-        <div className="column col-md-12 col-4 col-ml-auto text-center d-flex left-col">
+        <div className="column col-md-12 col-4 col-mx-auto text-center d-flex left-col">
           <div>
             <BoxContainer>
               <BoxImage src={img} />

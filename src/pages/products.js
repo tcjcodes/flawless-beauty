@@ -51,8 +51,7 @@ export const ProductPage = () => (
         </Card>
 
         <Card img={lipsense} title="Diamond Gloss">
-          Diamond gloss lorem ipsum, Coffee is a small tree or shrub that grows
-          in the forest understory in its wild form.
+          LOREM IPSUM DOLORES
         </Card>
       </section>
       <div className="next-row">
