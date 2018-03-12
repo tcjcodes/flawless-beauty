@@ -9,7 +9,6 @@ import styled from 'react-emotion';
 const BoxContainer = styled('div')`
   display: inline-block;
   position: relative;
-  margin: 1em auto;
 
   &:before {
     display: block;
@@ -34,20 +33,26 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <LayoutSection className="fb-about-page">
       <div className="columns">
-        <div className="column col-md-12 col-4 col-ml-auto text-center">
-          <BoxContainer>
-            <BoxImage src={img} />
-          </BoxContainer>
+        <div className="column col-md-12 col-4 col-ml-auto text-center d-flex left-col">
+          <div>
+            <BoxContainer>
+              <BoxImage src={img} />
+            </BoxContainer>
+          </div>
         </div>
         <div className="column right-col col-md-12 col-6 col-mr-auto">
           <h1 className="about-title">About Us</h1>
 
           <h3 className="fb-script">Edilene</h3>
           <p>
-            Single-origin coffee is coffee grown within a single known
-            geographic origin. Sometimes, this is a single farm or a specific
-            collection of beans from a single country. The name of the coffee is
-            then usually the place it was grown to whatever degree available.
+            Edilene is a full time working mom who fell in love with LipSense
+            during her wedding cruise. Edilene didn’t think of buying waterproof
+            makeup until a friend told her the week before her wedding that she
+            didn’t post any of her honeymoon pictures because she didn’t have
+            any makeup on. Twenty-four hours before embarking on the cruise,
+            Edilene rushed to Sephora and bought all waterproof makeup and her
+            cousin Christine let her borrow her Napa LipSense, which she used
+            for the entire seven day cruise!
           </p>
 
           <h3 className="fb-script">Christine</h3>
