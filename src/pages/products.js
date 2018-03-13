@@ -13,12 +13,11 @@ const Card = ({ img, title, children, ...otherProps }) => (
           <img src={img} alt={title} className="img-responsive" />
         </div>
         <div className="card-header">
-          <div className="h5 card-title">{title}</div>
+          <div className="card-title">{title}</div>
         </div>
         <div className="card-body">
-          <Dotdotdot clamp={7}>{children}</Dotdotdot>
+          <Dotdotdot clamp={9}>{children}</Dotdotdot>
         </div>
-        <div className="card-footer" />
       </div>
     </div>
   </div>
@@ -45,20 +44,22 @@ export const ProductPage = () => (
 
         <Card img={lipsense} title="LipSense Gloss">
           Moisturizing Glosses not only cover and protect naked lips but also
-          improve the longevity (staying power) of LipSense Liquid Lip Color.
-          Gloss provides exceptional protection from the elements and helps
-          repair dry, damaged, chapped and/or sensitive lips.
+          improve the longevity of LipSense Liquid Lip Color. It provides protection from elements and helps repair dry,
+          damaged, chapped, and/or sensitive lips.
         </Card>
 
         <Card img={lipsense} title="Diamond Gloss">
-          LOREM IPSUM DOLORES
+          Diamond Gloss is formulated with genuine crushed <em>diamond</em> gemstones for incredible sparkle, and helps
+          to
+          improve the longevity of LipSense Liquid Lip Color.
         </Card>
       </section>
       <div className="next-row">
         <h2 className="fb-script">Eyes</h2>
         <section className="columns next-row">
           <Card id="eyes" img={shadowsense} title="ShadowSense">
-            LOREM IPSUM DOLORES
+            Shadowsense shades can be worn separately or blended to create new colors and looks. Choose from Matte or
+            Shimmer shades!
           </Card>
         </section>
       </div>

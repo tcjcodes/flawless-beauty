@@ -69,7 +69,7 @@ export const WhatPage = () => (
               tested on animals.
             </p>
             <p>
-              LipSense has NO lead. LipSense is Gluten-Free, NON-GMO & Kosher.
+              LipSense has NO lead. LipSense is Gluten-Free, NON-GMO &amp; Kosher.
             </p>
             <div className="text-center">
               <Link to="/products#lips" className="btn btn-primary">
