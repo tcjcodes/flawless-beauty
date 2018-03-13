@@ -37,10 +37,7 @@ const navItems = [
 const OffCanvasSidebar = ({ isOpen }) => (
   <div
     id={sidebarId}
-    className={cx(
-      'off-canvas-sidebar p-2',
-      { 'show-sidebar': isOpen }
-    )}
+    className={cx('off-canvas-sidebar p-2', { 'show-sidebar': isOpen })}
   >
     <ul className="nav">
       {navItems.map(({ name, to }, index) => (
@@ -83,8 +80,7 @@ class OffCanvasContainer extends React.Component {
               onClick={this.toggleSidebar}
               isDisplaying={this.state.sidebarOpen}
             />
-            <OffCanvasSidebar
-              isOpen={this.state.sidebarOpen} />
+            <OffCanvasSidebar isOpen={this.state.sidebarOpen} />
             {this.props.children}
           </div>
         )}

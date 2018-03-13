@@ -44,22 +44,23 @@ export const ProductPage = () => (
 
         <Card img={lipsense} title="LipSense Gloss">
           Moisturizing Glosses not only cover and protect naked lips but also
-          improve the longevity of LipSense Liquid Lip Color. It provides protection from elements and helps repair dry,
-          damaged, chapped, and/or sensitive lips.
+          improve the longevity of LipSense Liquid Lip Color. It provides
+          protection from elements and helps repair dry, damaged, chapped,
+          and/or sensitive lips.
         </Card>
 
         <Card img={lipsense} title="Diamond Gloss">
-          Diamond Gloss is formulated with genuine crushed <em>diamond</em> gemstones for incredible sparkle, and helps
-          to
-          improve the longevity of LipSense Liquid Lip Color.
+          Diamond Gloss is formulated with genuine crushed <em>diamond</em>{' '}
+          gemstones for incredible sparkle, and helps to improve the longevity
+          of LipSense Liquid Lip Color.
         </Card>
       </section>
       <div className="next-row">
         <h2 className="fb-script">Eyes</h2>
         <section className="columns next-row">
           <Card id="eyes" img={shadowsense} title="ShadowSense">
-            Shadowsense shades can be worn separately or blended to create new colors and looks. Choose from Matte or
-            Shimmer shades!
+            Shadowsense shades can be worn separately or blended to create new
+            colors and looks. Choose from Matte or Shimmer shades!
           </Card>
         </section>
       </div>

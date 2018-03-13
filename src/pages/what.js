@@ -54,22 +54,19 @@ export const WhatPage = () => (
           <div>
             <h2 className="fb-script">LipSense</h2>
             <p>
-              <strong>LipSense</strong> is gluten-free, vegan, kosher,
-              non-GMO, contains no lead and no animal by-products. SeneGence
-              uses the highest quality ingredients and is made in the USA.
+              <strong>LipSense</strong> is gluten-free, vegan, kosher, non-GMO,
+              and contains no lead or animal by-products. SeneGence only uses the
+              highest quality ingredients and is made in the USA.
             </p>
             <strong>Is LipSense all natural?</strong>
             <p>
-              Yes! LipSense is made of true, <strong>natural</strong> pigments, natural Botanicals, raw
-              Shea Butter, and Simulated Bee's Wax.
+              Yes! LipSense is made of true, <strong>natural</strong> pigments,
+              natural Botanicals, raw Shea Butter, and Simulated Bee's Wax.
             </p>
             <p>
-              LipSense® and all our Shea butter glosses are Vegan (no animal
+              LipSense® and <strong>all</strong> our Shea butter glosses are Vegan (no animal
               emulsifiers or animal by-products) and nothing we sell is ever
               tested on animals.
-            </p>
-            <p>
-              LipSense has NO lead. LipSense is Gluten-Free, NON-GMO &amp; Kosher.
             </p>
             <div className="text-center">
               <Link to="/products#lips" className="btn btn-primary">
@@ -95,7 +92,7 @@ export const WhatPage = () => (
           <div>
             <h2 className="fb-script">ShadowSense</h2>
             <p>
-              Experience long-lasting, rich eye shadow shades that start as a
+              Experience <strong>long-lasting,</strong> rich eye shadow shades that start as a
               crème and finish as a powder on the eyes. Shades can be worn
               separately or blended to create new colors and looks.
             </p>
