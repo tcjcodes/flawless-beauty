@@ -25,11 +25,13 @@
       font-size: $font-size-sm;
       padding-top: 0.5em;
       @media (min-width: $size-sm) {
-        height: 135px;
+        height: 215px;
       }
     }
     .card-title {
-      min-height: 60px;
+      letter-spacing: 0;
+      font-size: $font-size-lg;
+      font-weight: 600;
     }
     .text-container {
       max-height: 5em;
