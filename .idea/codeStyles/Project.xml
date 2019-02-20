@@ -15,7 +15,7 @@
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
       <option name="HTML_ENFORCE_QUOTES" value="true" />
     </HTMLCodeStyleSettings>
-    <JSCodeStyleSettings>
+    <JSCodeStyleSettings version="0">
       <option name="FORCE_SEMICOLON_STYLE" value="true" />
       <option name="FIELD_PREFIX" value="" />
       <option name="REFORMAT_C_STYLE_COMMENTS" value="true" />
@@ -27,7 +27,7 @@
       <option name="IMPORT_SORT_MODULE_NAME" value="true" />
       <option name="BLACKLIST_IMPORTS" value="rxjs" />
     </JSCodeStyleSettings>
-    <TypeScriptCodeStyleSettings>
+    <TypeScriptCodeStyleSettings version="0">
       <option name="FORCE_SEMICOLON_STYLE" value="true" />
       <option name="FIELD_PREFIX" value="" />
       <option name="REFORMAT_C_STYLE_COMMENTS" value="true" />

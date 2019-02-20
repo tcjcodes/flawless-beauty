@@ -12,9 +12,9 @@ export const Footer = () => (
       <div className="p-2 fb-form form-horizontal">
         <div className="columns my-2">
           <div className="column col-md-5 col-sm-12">
-            <h3 className="">Contact Us</h3>
+            <h3 className="">Contact</h3>
             <p>
-              For questions, orders, or general inquiries, send us a message!
+              Message us for orders, questions, or general inquiries.
             </p>
 
             <p>Follow us on social media!</p>

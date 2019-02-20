@@ -28,7 +28,7 @@ const Navbar = () => (
         </Link>
         <div className="bordered py-1 d-flex">
           <Link className="hide-md mx-2 btn btn-link" to="/about">
-            About Us
+            About
           </Link>
           <a className="hide-md mx-2 btn btn-link" href="#contact">
             Contact
