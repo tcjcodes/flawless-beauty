@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://flawlessbeautyenc.netlify.com/* http://www.flawlessbeautyenc.com/:splat 301!
